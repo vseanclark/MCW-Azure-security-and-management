@@ -1,3 +1,23 @@
+# Abstract
+
+## Workshop
+
+The student will deploy and monitor a web application that has been deployed to Azure IaaS in this Hands-on Lab (HOL). Azure security and management services will be used to manage and monitor the operational performance and security of the underlying infrastructure. Azure Application Insights will be used to monitor performance, application usage, and identify the cause of any application issues that emerge.
+
+## Whiteboard Design Session
+TBD
+
+## Hand-on Lab
+TBD
+
+
+## Azure services and related products
+- Azure Monitor
+- Log Analytics
+- Azure VMs
+- Azure Application Insights
+- Azure Security Center
+
 
 # Contributing
 

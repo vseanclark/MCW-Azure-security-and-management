@@ -1,8 +1,17 @@
-# Azure security and management
+![](images/HeaderPic.png "Microsoft Cloud Workshops")
 
-## Hands-on lab unguided
+<div class="MCWHeader1">
+Azure security and management
+</div>
 
-## May 2018
+<div class="MCWHeader2">
+Hands-on lab unguided
+</div>
+
+<div class="MCWHeader3">
+May 2018
+</div>
+
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
 
@@ -10,137 +19,93 @@ Microsoft may have patents, patent applications, trademarks, copyrights, or othe
 
 The names of manufacturers, products, or URLs are provided for informational purposes only and Microsoft makes no representations and warranties, either expressed, implied, or statutory, regarding these manufacturers or the use of the products with any Microsoft technologies. The inclusion of a manufacturer or product does not imply endorsement of Microsoft of the manufacturer or product. Links may be provided to third party sites. Such sites are not under the control of Microsoft and Microsoft is not responsible for the contents of any linked site or any link contained in a linked site, or any changes or updates to such sites. Microsoft is not responsible for webcasting or any other form of transmission received from any linked site. Microsoft is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement of Microsoft of the site or the products contained therein.
 
-2018 Microsoft Corporation. All rights reserved.
+©  2018 Microsoft Corporation. All rights reserved.
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
-# Contents
+**Contents**
 
-[Azure security and management hands-on lab unguided](#azure-security-and-management-hands-on-lab-unguided)
+<!-- TOC -->
 
-[Abstract and learning objectives](#abstract-and-learning-objectives)
+- [Azure security and management hands-on lab unguided](#azure-security-and-management-hands-on-lab-unguided)
+    - [Abstract and learning objectives](#abstract-and-learning-objectives)
+    - [Overview](#overview)
+    - [Solution architecture](#solution-architecture)
+    - [Requirements](#requirements)
+    - [Exercise 1: Configure Azure automation](#exercise-1-configure-azure-automation)
+        - [Overview](#overview-1)
+        - [Task 1: Create automation account](#task-1-create-automation-account)
+            - [Tasks to complete](#tasks-to-complete)
+                - [Exit criteria](#exit-criteria)
+        - [Task 2: Add an Azure Automation Credential](#task-2-add-an-azure-automation-credential)
+            - [Tasks to complete](#tasks-to-complete-1)
+                - [Exit criteria](#exit-criteria-1)
+        - [Task 3: Upload DSC configurations into automation account](#task-3-upload-dsc-configurations-into-automation-account)
+            - [Tasks to complete](#tasks-to-complete-2)
+            - [Exit criteria](#exit-criteria-2)
+    - [Exercise 2: Build CloudShop environment](#exercise-2-build-cloudshop-environment)
+        - [Overview](#overview-2)
+        - [Task 1: Template deployment](#task-1-template-deployment)
+            - [Tasks to complete](#tasks-to-complete-3)
+            - [Exit criteria](#exit-criteria-3)
+        - [Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules](#task-2-allow-remote-desktop-to-the-webvm1--webvm2-using-nat-rules)
+            - [Tasks to complete](#tasks-to-complete-4)
+            - [Exit criteria](#exit-criteria-4)
+        - [Task 3: Configure diagnostics accounts for the VMs](#task-3-configure-diagnostics-accounts-for-the-vms)
+            - [Tasks to complete](#tasks-to-complete-5)
+            - [Exit criteria](#exit-criteria-5)
+    - [Exercise 3: Build and configure the Azure Security Center and Azure Management](#exercise-3-build-and-configure-the-azure-security-center-and-azure-management)
+        - [Overview](#overview-3)
+        - [Task 1: Provision Log Analytics through Azure Monitor](#task-1-provision-log-analytics-through-azure-monitor)
+            - [Tasks to complete](#tasks-to-complete-6)
+            - [Exit criteria](#exit-criteria-6)
+        - [Task 2: Explore Security Center](#task-2-explore-security-center)
+            - [Tasks to complete](#tasks-to-complete-7)
+            - [Exit criteria](#exit-criteria-7)
+        - [Task 3: Add Service Map](#task-3-add-service-map)
+            - [Tasks to complete](#tasks-to-complete-8)
+            - [Exit criteria](#exit-criteria-8)
+        - [Task 4: Configure Service Map](#task-4-configure-service-map)
+            - [Tasks to complete](#tasks-to-complete-9)
+            - [Exit criteria](#exit-criteria-9)
+        - [Task 5: Configure Update Management](#task-5-configure-update-management)
+            - [Tasks to complete](#tasks-to-complete-10)
+            - [Exit criteria](#exit-criteria-10)
+        - [Task 6: Configure Inventory Tracking and Change Management](#task-6-configure-inventory-tracking-and-change-management)
+            - [Tasks to complete](#tasks-to-complete-11)
+            - [Exit criteria](#exit-criteria-11)
+    - [Exercise 4: Instrument CloudShop using Azure Application Insights](#exercise-4-instrument-cloudshop-using-azure-application-insights)
+        - [Overview](#overview-4)
+        - [Task 1: Install and configure the Application Insights status monitor](#task-1-install-and-configure-the-application-insights-status-monitor)
+            - [Tasks to complete](#tasks-to-complete-12)
+            - [Exit criteria](#exit-criteria-12)
+        - [Task 2: Configure the Applications Insights workspace in Azure](#task-2-configure-the-applications-insights-workspace-in-azure)
+            - [Tasks to complete](#tasks-to-complete-13)
+            - [Exit criteria](#exit-criteria-13)
+        - [Task 3: Simulate a failure of the CloudShop application](#task-3-simulate-a-failure-of-the-cloudshop-application)
+            - [Tasks to complete](#tasks-to-complete-14)
+            - [Exit criteria](#exit-criteria-14)
+    - [Exercise 5: Explore Azure Security and Operations Management, Application Insights and build a dashboard](#exercise-5-explore-azure-security-and-operations-management-application-insights-and-build-a-dashboard)
+        - [Overview](#overview-5)
+        - [Task 1: Work with Log Analytics Data and Azure Monitor](#task-1-work-with-log-analytics-data-and-azure-monitor)
+            - [Tasks to complete](#tasks-to-complete-15)
+            - [Exit criteria](#exit-criteria-15)
+        - [Task 2: Prevention](#task-2-prevention)
+            - [Tasks to complete](#tasks-to-complete-16)
+            - [Exit criteria](#exit-criteria-16)
+        - [Task 3: Set up a manual activity log alert](#task-3-set-up-a-manual-activity-log-alert)
+            - [Tasks to complete](#tasks-to-complete-17)
+            - [Exit criteria](#exit-criteria-17)
+        - [Task 4: Installing & using the Azure mobile application](#task-4-installing--using-the-azure-mobile-application)
+            - [Tasks to complete](#tasks-to-complete-18)
+            - [Exit criteria](#exit-criteria-18)
+        - [Task 5: Application Insights](#task-5-application-insights)
+            - [Tasks to complete](#tasks-to-complete-19)
+            - [Exit criteria](#exit-criteria-19)
+    - [After the hands-on lab](#after-the-hands-on-lab)
+        - [Overview](#overview-6)
 
-[Overview](#overview)
-
-[Solution architecture](#solution-architecture)
-
-[Requirements](#requirements)
-
-[Before the hands-on lab](#before-the-hands-on-lab)
-
-[Overview](#overview-1)
-
-[Task 1: Build a Lab Virtual Machine in Azure.](#task-1-build-a-lab-virtual-machine-in-azure.)
-
-[Task 2: Connect to LABVM & download and unzip student files](#_Toc513553236)
-
-[Task 3: Create a new Azure portal dashboard](#task-3-create-a-new-azure-portal-dashboard)
-
-[Summary](#summary)
-
-[Exercise 1: Configure Azure automation](#exercise-1-configure-azure-automation)
-
-[Overview](#overview-2)
-
-[Task 1: Create automation account](#task-1-create-automation-account)
-
-[Exit criteria](#exit-criteria)
-
-[Task 2: Add an Azure Automation Credential](#task-2-add-an-azure-automation-credential)
-
-[Exit Criteria](#exit-criteria-1)
-
-[Task 3: Upload DSC configurations into automation account](#task-3-upload-dsc-configurations-into-automation-account)
-
-[Exit criteria](#exit-criteria-2)
-
-[Exercise 2: Build CloudShop environment](#exercise-2-build-cloudshop-environment)
-
-[Overview](#overview-3)
-
-[Task 1: Template deployment](#task-1-template-deployment)
-
-[Exit criteria](#exit-criteria-3)
-
-[Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules](#task-2-allow-remote-desktop-to-the-webvm1-webvm2-using-nat-rules)
-
-[Exit criteria](#exit-criteria-4)
-
-[Task 3: Configure diagnostics accounts for the VMs](#task-3-configure-diagnostics-accounts-for-the-vms)
-
-[Exit criteria](#exit-criteria-5)
-
-[Exercise 3: Build and configure the Azure Security Center and Azure Management](#exercise-3-build-and-configure-the-azure-security-center-and-azure-management)
-
-[Overview](#overview-4)
-
-[Task 1: Provision Log Analytics through Azure Monitor](#task-1-provision-log-analytics-through-azure-monitor)
-
-[Exit criteria](#exit-criteria-6)
-
-[Task 2: Explore Security Center](#task-2-explore-security-center)
-
-[Exit Criteria](#exit-criteria-7)
-
-[Task 3: Add Service Map](#task-3-add-service-map)
-
-[Exit Criteria](#exit-criteria-8)
-
-[Task 4: Configure Service Map](#task-4-configure-service-map)
-
-[Exit criteria](#exit-criteria-9)
-
-[Task 5: Configure Update Management](#task-5-configure-update-management)
-
-[Exit Criteria](#exit-criteria-10)
-
-[Task 6: Configure Inventory Tracking and Change Management](#task-6-configure-inventory-tracking-and-change-management)
-
-[Exit Criteria](#exit-criteria-11)
-
-[Exercise 4: Instrument CloudShop using Azure Application Insights](#exercise-4-instrument-cloudshop-using-azure-application-insights)
-
-[Overview](#overview-5)
-
-[Task 1: Install and configure the Application Insights status monitor](#task-1-install-and-configure-the-application-insights-status-monitor)
-
-[Exit criteria](#exit-criteria-12)
-
-[Task 2: Configure the Applications Insights workspace in Azure](#task-2-configure-the-applications-insights-workspace-in-azure)
-
-[Exit criteria](#exit-criteria-13)
-
-[Task 3: Simulate a failure of the CloudShop application](#task-3-simulate-a-failure-of-the-cloudshop-application)
-
-[Exit criteria](#exit-criteria-14)
-
-[Exercise 5: Explore Azure Security and Operations Management, Application Insights and build a dashboard](#exercise-5-explore-azure-security-and-operations-management-application-insights-and-build-a-dashboard)
-
-[Overview](#overview-6)
-
-[Task 1: Work with Log Analytics Data and Azure Monitor](#task-1-work-with-log-analytics-data-and-azure-monitor)
-
-[Exit criteria](#exit-criteria-15)
-
-[Task 2: Prevention](#task-2-prevention)
-
-[Exit criteria](#exit-criteria-16)
-
-[Task 3: Set up a manual activity log alert](#task-3-set-up-a-manual-activity-log-alert)
-
-[Exit criteria](#exit-criteria-17)
-
-[Task 4: Installing & using the Azure mobile application](#task-4-installing-using-the-azure-mobile-application)
-
-[Exit criteria](#exit-criteria-18)
-
-[Task 5: Application Insights](#task-5-application-insights)
-
-[Exit criteria](#exit-criteria-19)
-
-[After the hands-on lab](#after-the-hands-on-lab)
-
-[Overview](#overview-7)
+<!-- /TOC -->
 
 # Azure security and management hands-on lab unguided 
 
@@ -162,7 +127,7 @@ Per Roberto Milian, VP of Development and IT Operations, "FT's primary concern i
 
 ## Solution architecture
 
-![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image2.png)
+![The Proof of Concept Solution diagram includes Cloud Shop Application and Azure Management and Monitoring.](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image2.png "Proof of Concept Solution diagram")
 
 ## Requirements
 
@@ -180,154 +145,28 @@ Per Roberto Milian, VP of Development and IT Operations, "FT's primary concern i
 
     -   Azure PowerShell 4.0 or later
 
-## Before the hands-on lab
-
-Duration: 30 mins
-
-#### Overview
-
-Before attending the HOL, you should follow these steps to prepare your environment for an efficient day. Your first task will be to build a **LABVM** to use for the HOL and download some student files that will be used. Then, you will create a new Azure Dashboard to use during the HOL.
-
-#### Task 1: Build a Lab Virtual Machine in Azure.
-
-1.  Launch a browser and navigate to <https://portal.azure.com>. Once prompted, login with your Microsoft Azure credentials. If prompted, choose whether your account is an organization account or just a Microsoft Account.
-
-Note: You may need to launch an \"in-private\" session in your browser if you have multiple Microsoft Accounts.
-
-2.  Click on **+Create a resource**, and in the search box, type in **Visual Studio Community 2017,** and press enter. Click the Visual Studio Community 2017 image running on Windows Server 2016.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image3.png)
-
-3.  Leave the default of *Resource Manager* deployment model and click **Create**.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image4.png)
-
-4.  Set the following configuration on the Basics tab, and click **OK**.
-
-    -   Name: **LABVM**
-
-    -   VM disk type: **SSD**
-
-    -   User name: **demouser**
-
-    -   Password: **demo\@pass123**
-
-    -   Subscription: **If you have multiple subscriptions, choose the subscription to execute your labs in.**
-
-    -   Resource Group: **OPSLABRG**
-
-    -   Location: **Choose the closest Azure region to you.**
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image5.png)
-
-5.  Choose the **DS2\_V2 or D2S\_V3 Standard** instance size on the Size blade.
-
-    
-6.  Accept the default values on the Settings blade, and click **OK**. On the Summary page, click **OK**. The deployment should begin provisioning. It may take 10+ minutes for the virtual machine to complete provisioning.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image7.png)
-
-7.  Once the deployment is complete, move on to the next exercise.
-
-#### Task 2: Connect to LABVM & download and unzip student files
-
-1.  Move back to the Portal page on your local machine, and wait for **LABVM** to show the Status of **Running**. Once it is running, click **Connect** to establish a new Remote Desktop Session.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image8.png)
-
-2.  Depending on your remote desktop protocol client and browser configuration, you will either be prompted to open an RDP file, or you will need to download it and then open it separately to connect.
-
-3.  Login with the credentials specified during creation:
-
-    a.  User: **demouser**
-
-    b.  Password: **demo\@pass123**
-
-4.  You will be presented with a Remote Desktop Connection warning because of a certificate trust issue. Click **Yes** to continue with the connection.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image9.png)
-
-5.  When logging on for the first time, you will see a prompt on the right asking about network discovery. Click **No**.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image10.png)
-
-6.  Open Server Manager (**Start Server Manager).** On the left, click **Local Server**.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image11.png)
-
-    > NOTE: Server Manager may open by default.
-
-7.  On the right side of the pane, click **On** by **IE Enhanced Security Configuration**.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image12.png)
-
-8.  Change to **Off** for Administrators, and click **OK**.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image13.png)
-
-9.  In the lower left corner, click on the **Windows** button to open the **Start Screen**. Then, click **Internet Explorer** to open it. On first use, you will be prompted about security settings. Accept the defaults by clicking **OK**.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image14.png)
-
-10. If prompted, choose to Turn Protected mode on.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image15.png)
-
-11. In the URL address window enter the below URL and hit the Enter key. This will download the class files (in a .zip format) needed for the remaining labs. <https://cloudworkshop.blob.core.windows.net/operations-management-suite/StudentFiles.zip>
-
-    > NOTE: In some Azure VM images, the image is configured so that downloads are disabled. To enable the download of the Student Files, go to Internet Options, select the Security Tab, and on the Internet Zone select \"Custom Level\". Then scroll down to the Downloads section and select the radio button for Enable in the File Download subsection.
-
-12. You will be prompted about what you want to do with the file. Select **Save**.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image16.png)
-
-13. Download progress is shown at the bottom of the browser window. When the download is complete, click **Open folder**.
-
-14. The **Downloads** folder opens. ***Right-click*** the zip file, and click **Extract All**. In the **Extract Compressed (Zipped) Folders** window, enter **C:\\HOL** in the **Select a Destination and Extract Files** dialog. Click the **Extract** button.
-
-#### Task 3: Create a new Azure portal dashboard
-
-1.  Open Internet Explorer on LABVM and point to <https://portal.azure.com>
-
-2.  Sign in to Azure using your credentials.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image17.png)
-
-3.  Once you are at the Azure portal dashboard, click **New Dashboard,** and type the name **My Dashboard**, then click **done customizing.**
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image18.png)
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image19.png)
-
-4.  Then navigate back to your **LABVM** blade and use the "Pin" to add it to your new **My Dashboard**. This Dashboard will be used for the rest of this HOL.
-
-    ![](images/Hands-onlabunguided-Azuresecurityandmanagementimages/media/image20.png)
-
-5.  If you're going to be finishing this lab today, then continue to the next exercise. Otherwise, if you won't be finishing the rest of the lab today, then it may be helpful to click **Stop** on your **LABVM** within the Azure Portal. This will put the VM into a Stopped / Deallocated state, and save money until it's needed again. When you're ready to continue with the lab, then navigate back to the **LABVM** blade and click **Start** to start it back up again.
-
-#### Summary
-
-In this exercise, you built a LABVM to use for the HOL and downloaded some student files that will be used. Then, you created a new Azure Dashboard to use during the HOL.
-
-**Note: You should follow all steps provided before attending the HOL.**
 
 ## Exercise 1: Configure Azure automation
 
 Duration: 15 minutes
 
-#### Overview
+### Overview
 
 In this exercise, you will create and configure an Azure Automation account in the Azure Portal which will be used to configure the application servers using Azure DSC.
 
-#### Task 1: Create automation account
+### Task 1: Create automation account
+
+#### Tasks to complete 
 
 -   Create an Azure Automation account in a new Resource group called **HOLRG**.
 
-#### Exit criteria
+##### Exit criteria
 
 -   There is now an Azure Automation account.
 
-#### Task 2: Add an Azure Automation Credential
+### Task 2: Add an Azure Automation Credential
+
+#### Tasks to complete 
 
 -   Create an Automation Credential with the following properties:
 
@@ -337,13 +176,15 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     c.  Password & Confirm: **demo\@pass123**
 
-NOTE: It is important to use the exact name for the credential, because one of the scripts you upload in the next step references the name directly.
+    > NOTE: It is important to use the exact name for the credential, because one of the scripts you upload in the next step references the name directly.
 
-#### Exit Criteria
+##### Exit criteria
 
 -   There is now an Automation Credential.
 
-#### Task 3: Upload DSC configurations into automation account
+### Task 3: Upload DSC configurations into automation account
+
+#### Tasks to complete 
 
 -   Create two DSC Configurations using the provided files: **C:\\HOL\\CloudShopWeb.ps1** & **C:\\HOL\\CloudShopSQL.ps1**. Make sure they are ready to configure the VMs that will be used for the pilot.
 
@@ -355,11 +196,13 @@ NOTE: It is important to use the exact name for the credential, because one of t
 
 Duration: 60 minutes
 
-#### Overview
+### Overview
 
 In this exercise, you will run a template deployment using an ARM template provided which will deploy a Virtual Network, Azure Load balancer, two IIS Servers and a SQL Server. The Servers will check into Azure Automation and run the DSC Configurations that you built in Exercise 1. This will configure the boxes with the CloudShop Application. You will also configure Inbound NAT Rules to allow RDP access to the Web Servers. Azure diagnostics will also be configured into a new storage account for the VMs.
 
-#### Task 1: Template deployment
+### Task 1: Template deployment
+
+#### Tasks to complete 
 
 1.  Locate the Access Keys and URL for your Azure Automation account.
 
@@ -371,8 +214,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 -   CloudShop Website is up and running and answering on the Load balancer. Verify that both **WEBVM1** and **WEBVM2** are serving pages.
 
-#### Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules
+### Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules
 
+#### Tasks to complete 
 1.  Configure the Azure Load Balancer to allow RDP access to both **WEBVM1** and **WEBVM2**.
 
 2.  RDP to each of the servers, and disable the IE Enhanced Security Configuration.
@@ -383,8 +227,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 -   All the Servers can now use the IE Web Browsers normally.
 
-#### Task 3: Configure diagnostics accounts for the VMs
+### Task 3: Configure diagnostics accounts for the VMs
 
+#### Tasks to complete 
 1.  For each **VM** in the **HOLRG,** configure Client Diagnostics. Make sure to capture the correct type of Metrics based on the type of Server.
 
 #### Exit criteria
@@ -395,12 +240,13 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 Duration: 30 minutes
 
-#### Overview
+### Overview
 
 The next step is to provision the Azure security and Azure management components of Azure Automation, configure the VMs for the CloudShop application to be managed by the portal, and configure the diagnostics storage account to load data into the Log Analytics platform. Additionally, you will configure Update Management, Inventory Tracking and Change Management as well as install and configure the Service Map solution pack.
 
-#### Task 1: Provision Log Analytics through Azure Monitor
+### Task 1: Provision Log Analytics through Azure Monitor
 
+#### Tasks to complete
 1.  Use Azure Monitor to create a Log Analytics workspace to make sure to use the OMS pricing tier.
 
 2.  Connect the Virtual machines from the **HOLRG**.
@@ -411,25 +257,31 @@ The next step is to provision the Azure security and Azure management components
 
 -   The VMs that make of the CloudShop Application are connected to the workspace.
 
-#### Task 2: Explore Security Center
+### Task 2: Explore Security Center
+
+#### Tasks to complete 
 
 1.  Open the Azure portal and navigate to the **Security Center** menu option.
 
 2.  Upgrade to Standard tier to get advanced security.
 
-#### Exit Criteria
+#### Exit criteria
 
 -   Azure Security Center has been upgraded to the Standard tier.
 
-#### Task 3: Add Service Map
+### Task 3: Add Service Map
+
+#### Tasks to complete 
 
 -   Add the following Solution packs using the Azure Portal: **Service Map**
 
-#### Exit Criteria
+#### Exit criteria
 
 -   The following Solution packs have been added using the Azure Portal: **Service Map**
 
-#### Task 4: Configure Service Map
+### Task 4: Configure Service Map
+
+#### Tasks to complete 
 
 -   Open a Remote Desktop Connection to **WEBVM1.**
 
@@ -445,19 +297,22 @@ The next step is to provision the Azure security and Azure management components
 
 -   The Microsoft Dependency Agent has been installed on **WEBVM1** and **WEBVM2.**
 
-#### Task 5: Configure Update Management
+### Task 5: Configure Update Management
 
+#### Tasks to complete 
 -   Enable **Update management** for the following VMs: **WEBVM1**, **WEBVM2**, and **SQLVM**
 
-#### Exit Criteria
+#### Exit criteria
 
 -   **Update management** has been enabled on the following VMs: **WEBVM1**, **WEBVM2**, and **SQLVM**
 
-#### Task 6: Configure Inventory Tracking and Change Management
+### Task 6: Configure Inventory Tracking and Change Management
+
+#### Tasks to complete 
 
 -   Enable **Change Tracking and Inventory** for the following VMs: **WEBVM1**, **WEBVM2**, and **SQLVM**
 
-#### Exit Criteria
+#### Exit criteria
 
 -   **Change Tracking and Inventory** has been enabled on the following VMs: **WEBVM1**, **WEBVM2**, and **SQLVM**
 
@@ -465,11 +320,13 @@ The next step is to provision the Azure security and Azure management components
 
 Duration: 45 minutes
 
-#### Overview
+### Overview
 
 In this exercise, you will instrument the CloudShop using Application Insights at runtime. This will be accomplished by installing the Applications Insights tool on web services and configuring an Application Insight workspace in Azure. Then, you will configure Application Insights to perform web tests and alerts. The final task will be to connect the Application Insights workspace to send data to the Portal.
 
-#### Task 1: Install and configure the Application Insights status monitor
+### Task 1: Install and configure the Application Insights status monitor
+
+#### Tasks to complete 
 
 1.  Connect to the **WEBVM1** and install the Application Insights Monitor using this Link: <http://bit.ly/2jxQ43z>
 
@@ -485,7 +342,9 @@ In this exercise, you will instrument the CloudShop using Application Insights a
 
 -   The CloudShop Application on both servers is sending live telemetry data to the newly created Application Insights workspace in Azure.
 
-#### Task 2: Configure the Applications Insights workspace in Azure
+### Task 2: Configure the Applications Insights workspace in Azure
+
+#### Tasks to complete 
 
 1.  In the Azure portal ensure that you see two servers sending live stream data and that App Map shows the application and dependency of the SQL Server.
 
@@ -509,8 +368,9 @@ In this exercise, you will instrument the CloudShop using Application Insights a
 
 -   The participant used the Live Stream to observe how the application performed under load.
 
-#### Task 3: Simulate a failure of the CloudShop application
+### Task 3: Simulate a failure of the CloudShop application
 
+#### Tasks to complete 
 1.  Simulate an outage of the Cloud Shop Application by stopping your two web servers, and see how the alerts capture and warn you as the administrator of the outage.
 
 2.  Start the web servers to resolve the simulated outage, and resolve the alerts.
@@ -525,11 +385,13 @@ In this exercise, you will instrument the CloudShop using Application Insights a
 
 Duration: 45 minutes
 
-#### Overview
+### Overview
 
 In this exercise, you will explore the information and data being provided by OMS and Application Insights to gain situational awareness of the application and infrastructure. You will look at the Security Posture of the infrastructure, the applications performance, and build a dashboard that can be used to manage it moving forward.
 
-#### Task 1: Work with Log Analytics Data and Azure Monitor
+### Task 1: Work with Log Analytics Data and Azure Monitor
+
+#### Tasks to complete 
 
 1.  From your Log Analytics Blade pin your Log Search to the My Dashboard you create in the Azure Portal.
 
@@ -545,7 +407,9 @@ In this exercise, you will explore the information and data being provided by OM
 
 -   The search should be saved in the portal.
 
-#### Task 2: Prevention
+### Task 2: Prevention
+
+#### Tasks to complete 
 
 1.  Use Azure Security Center to under what preventative steps can be taken to protect your environment.
 
@@ -555,7 +419,10 @@ In this exercise, you will explore the information and data being provided by OM
 
 -   You understand some of the baseline recommendations that Security Center provides across the Compute, Network, Storage & data, and Applications data planes.
 
-#### Task 3: Set up a manual activity log alert
+### Task 3: Set up a manual activity log alert
+
+#### Tasks to complete 
+
 
 1.  Using the portal, create an alert through Azure Monitor that will send an Azure app notification when a virtual machine is restarted in the HOLRG resource group.
 
@@ -563,7 +430,10 @@ In this exercise, you will explore the information and data being provided by OM
 
 -   The alert has been successfully created.
 
-#### Task 4: Installing & using the Azure mobile application
+### Task 4: Installing & using the Azure mobile application
+
+#### Tasks to complete 
+
 
 1.  Using your mobile phone's AppStore, install the Microsoft Azure app on your smartphone, allow notifications and sign-in to Azure.
 
@@ -579,7 +449,10 @@ In this exercise, you will explore the information and data being provided by OM
 
 -   The alert you created has fired off and caused you to get smartphone notifications, based on restarting one of the web server virtual machines.
 
-#### Task 5: Application Insights
+### Task 5: Application Insights
+
+#### Tasks to complete 
+
 
 1.  Open the Application Insights portal Azure Monitor and use the Performance item under the Investigate section to review performance related metrics for the web applications**.**
 
@@ -599,7 +472,7 @@ In this exercise, you will explore the information and data being provided by OM
 
 Duration: 10 mins
 
-#### Overview
+### Overview
 
 In this exercise, attendees will de-provision any Azure resources that were created in support of the lab.
 

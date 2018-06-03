@@ -1,8 +1,17 @@
-# Azure security and management
+![](images/HeaderPic.png "Microsoft Cloud Workshops")
 
-## Whiteboard design session student guide
+<div class="MCWHeader1">
+Azure security and management
+</div>
 
-## May 2018
+<div class="MCWHeader2">
+Whiteboard design session student guide
+</div>
+
+<div class="MCWHeader3">
+May 2018
+</div>
+
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
 
@@ -10,25 +19,27 @@ Microsoft may have patents, patent applications, trademarks, copyrights, or othe
 
 The names of manufacturers, products, or URLs are provided for informational purposes only and Microsoft makes no representations and warranties, either expressed, implied, or statutory, regarding these manufacturers or the use of the products with any Microsoft technologies. The inclusion of a manufacturer or product does not imply endorsement of Microsoft of the manufacturer or product. Links may be provided to third party sites. Such sites are not under the control of Microsoft and Microsoft is not responsible for the contents of any linked site or any link contained in a linked site, or any changes or updates to such sites. Microsoft is not responsible for webcasting or any other form of transmission received from any linked site. Microsoft is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement of Microsoft of the site or the products contained therein.
 
-2018 Microsoft Corporation. All rights reserved.
+©  2018 Microsoft Corporation. All rights reserved.
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
-# Contents 
+**Contents**
 
-[Azure security and management whiteboard design session student guide 1](#azure-security-and-management-whiteboard-design-session-student-guide)
+<!-- TOC -->
 
-[Abstract and learning objectives 1](#abstract-and-learning-objectives)
+- [Azure security and management whiteboard design session student guide](#azure-security-and-management-whiteboard-design-session-student-guide)
+    - [Abstract and learning objectives](#abstract-and-learning-objectives)
+    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+        - [Customer situation](#customer-situation)
+        - [Customer needs](#customer-needs)
+        - [Customer objections](#customer-objections)
+        - [Infographic for common scenarios](#infographic-for-common-scenarios)
+    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3-present-the-solution)
+    - [Wrap-up](#wrap-up)
+    - [Additional references](#additional-references)
 
-[Step 1: Review the customer case study 1](#step-1-review-the-customer-case-study)
-
-[Step 2: Design a proof of concept solution 6](#step-2-design-a-proof-of-concept-solution)
-
-[Step 3: Present the solution 8](#step-3-present-the-solution)
-
-[Wrap-up 9](#wrap-up)
-
-[Additional references 10](#additional-references)
+<!-- /TOC -->
 
 # Azure security and management whiteboard design session student guide
 
@@ -38,23 +49,17 @@ In this session, the customer is looking for managing and monitoring solutions f
 
 ## Step 1: Review the customer case study 
 
-**Outcome**
+**Outcome** 
 
-Analyze your customer's needs.
+Analyze your customer’s needs.
+Time frame: 15 minutes 
+Directions: With all participants in the session, the facilitator/SME presents an overview of the customer case study along with technical tips. 
+1.  Meet your table participants and trainer 
+2.  Read all of the directions for steps 1–3 in the student guide 
+3.  As a table team, review the following customer case study
 
-#### Facilitator/subject matter expert (SME) presentation of customer case study 
 
-Time frame: 15 minutes
-
-Directions: With all participants in the session, the facilitator/SME presents an overview of the customer case study along with technical tips.
-
-1.  Meet your table participants and trainer.
-
-2.  Read all of the directions for Steps 1--3 in the Student guide.
-
-3.  As a table team, review the following customer case study.
-
-#### Customer situation
+### Customer situation
 
 FusionTomo (FT) is a multi-national holding company headquartered in Los Angeles, CA that owns 48 manufacturing companies located in North America, Europe and Asia. These companies sell their products primarily to distributors or large retail organizations around the world. FT, as the parent company, controls the IT systems for the companies that it owns and thus runs their e-commerce based applications. There are about 125 of these e-commerce applications used primarily for business-to-business purchasing by corporate buyers. These apps provide the bulk of FT's 15 billion dollars in revenue per year, so they are mission critical.
 
@@ -75,7 +80,7 @@ Having an easily customizable dashboard integrated with the Azure Portal is very
 Of course, security is on the top of the chain, so they also need a security solution and updated management system. Since FT's business leverages all e-commerce based applications, they need to ensure that only the appropriate level of access to the system is allowed and they need to be alerted if systems are being attacked.
 
 
-#### Customer needs 
+### Customer needs 
 
 1.  FT wants to continue to embrace their move toward DevOps techniques, as they move to Azure. They want to move to an Infrastructure as Code model for the deployments, and they have automated configuration management for their applications.
 
@@ -85,8 +90,7 @@ Of course, security is on the top of the chain, so they also need a security sol
 
 4.  FT is also looking for an Application Monitoring Solution that can provide end-to-end monitoring and visibility of their applications. It needs to allow the team to drill into the data and determine which pieces of the application are not performing well including the dependences such as the SQL Server and any queries that are running in the background. They also need to have a web monitoring solution providing up/down tests from spots all over the globe and the ability to tell them when the application is not performing as expected. Performance testing is something they have lacked for a long time, but they have a good understanding of the applications in their current deployments. FT needs the ability to perform simple performance tests that will help them benchmark and size their VMs without having to run a bunch of code or invest in expensive tools or consultants. One final aspect that is important to FT is the ability to create Application Layer Alerts which need to show up in the portal. Also, the Application Management Solution needs to integrate with the Management and Monitoring solution. This means that all of the data from Application Performance Management (APM) should flow into the other management system.
 
-
-#### Customer objections 
+### Customer objections 
 
 1.  FT cannot change the code of any application as a part of this deployment, so all application monitoring must be done without instrumenting the code.
 
@@ -94,35 +98,31 @@ Of course, security is on the top of the chain, so they also need a security sol
 
 3.  SQL Server is used extensively in their application eco-system. FT is concerned about proper configuration, and they are worried SQL may not perform adequately on VMs in Azure. The system needs to provide feedback on proper configurations with the ability to drill down into how the system is performing, even down to the query level, showing dependences and their ASP.NET applications.
 
-#### Infographic for common scenarios
+### Infographic for common scenarios
 
-![](\Whiteboarddesignsessionstudentguide-Azuresecurityandmanagementimages/media/image2.png)
+![Common scenarios include Log analytics, automation, monitor, security, and app insights.](images/Whiteboarddesignsessionstudentguide-Azuresecurityandmanagementimages/media/image2.png "Common scenarios")
 
 ## Step 2: Design a proof of concept solution
 
-**Outcome**
-
-Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format.
+**Outcome** 
+Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format. 
 
 Time frame: 60 minutes
 
 **Business needs**
 
-Directions: With all participants at your table, answer the following questions and list the answers on a flip chart.
-
-1.  Who should you present this solution to? Who is your target customer audience? Who are the decision makers?
-
+Directions: With all participants at your table, answer the following questions and list the answers on a flip chart. 
+1.  Who should you present this solution to? Who is your target customer audience? Who are the decision makers? 
 2.  What customer business needs do you need to address with your solution?
 
-**Design**
-
+**Design** 
 Directions: With all participants at your table, respond to the following questions on a flip chart.
 
 *High-level architecture*
 
 -   Without getting into the details (the following sections will address particular details), diagram your initial vision for handling the top-level requirements for deploying, testing, managing, monitoring, patch management compliance, securing and troubleshooting these applications in Azure IaaS. You will refine this diagram as you proceed.
 
-*Address the following customer requirements*
+*Address the following customer requirements *
 
 -   What services and approach would you take to address the need to continually update their infrastructure and configuration of their applications?
 
@@ -140,43 +140,38 @@ Directions: With all participants at your table, respond to the following questi
 
 -   What approach would you take for web application monitoring and capturing custom telemetry? How can there be a central view of the state of the applications? What tools are available to test performance from remote geographies?
 
+
+
 **Prepare**
 
-Directions: With all participants at your table:
+Directions: With all participants at your table: 
 
-1.  Identify any customer needs that are not addressed with the proposed solution.
-
-2.  Identify the benefits of your solution.
-
-3.  Determine how you will respond to the customer's objections.
+1.  Identify any customer needs that are not addressed with the proposed solution. 
+2.  Identify the benefits of your solution. 
+3.  Determine how you will respond to the customer’s objections. 
 
 Prepare a 15-minute chalk-talk style presentation to the customer.
+
 
 ## Step 3: Present the solution
 
 **Outcome**
-
+ 
 Present a solution to the target customer audience in a 15-minute chalk-talk format.
-
-**Presentation**
 
 Time frame: 30 minutes
 
-**Directions **
+**Presentation** 
 
+Directions:
 1.  Pair with another table.
-
 2.  One table is the Microsoft team and the other table is the customer.
-
 3.  The Microsoft team presents their proposed solution to the customer.
-
 4.  The customer makes one of the objections from the list of objections.
-
 5.  The Microsoft team responds to the objection.
+6.  The customer team gives feedback to the Microsoft team. 
+7.  Tables switch roles and repeat Steps 2–6.
 
-6.  The customer team gives feedback to the Microsoft team.
-
-7.  Tables switch roles and repeat Steps 2--6.
 
 ##  Wrap-up 
 
@@ -186,14 +181,15 @@ Time frame: 15 minutes
 
 ##  Additional references
 
-|         |            |
-| ------------- |:-------------:|
-| Update Management    | <https://docs.microsoft.com/en-us/azure/automation/automation-update-management> |
-| Change tracking    | <https://docs.microsoft.com/en-us/azure/automation/automation-change-tracking>  |
-| Security Center          | <https://docs.microsoft.com/en-us/azure/security-center/> |
-| Log Analytics |  <https://docs.microsoft.com/en-us/azure/log-analytics/> |  |
-| Microsoft Azure app    | <https://itunes.apple.com/us/app/microsoft-azure/id1219013620?mt=8> |
-| Azure security center and Azure SQL protection   | <https://docs.microsoft.com/en-us/azure/security-center/security-center-sql-service-recommendations> |
-| Applications Insights | <https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview> |
-| Instrument web apps at runtime with Application Insights | <https://docs.microsoft.com/en-us/azure/application-insights/app-insights-monitor-performance-live-website-now> |
+|    |            |
+|----------|:-------------:|
+| **Description** | **Links** |
+|Azure update management documentation  |  <https://docs.microsoft.com/en-us/azure/automation/automation-update-management> |
+|Change tracking documentation    |  <https://docs.microsoft.com/en-us/azure/automation/automation-change-tracking>     |
+|Azure security and operations management Documentation   | <https://docs.microsoft.com/en-us/azure/security-center/>   |
+|Azure Log Analytics documentation    | <https://docs.microsoft.com/en-us/azure/log-analytics/>  |
+|Azure mobile application    |<https://itunes.apple.com/us/app/microsoft-azure/id1219013620?mt=8>    |
+|Azure security center and Azure SQL protection documentation   |<https://docs.microsoft.com/en-us/azure/security-center/security-center-sql-service-recommendations>    |
+|App Insights documentation    |  <https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview>  |
+| Instrument web apps at runtime with Application Insights  | <https://docs.microsoft.com/en-us/azure/application-insights/app-insights-monitor-performance-live-website-now>  |
 
