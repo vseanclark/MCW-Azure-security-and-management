@@ -243,7 +243,7 @@ Directions: With all participants at your table, respond to the following questi
 
 -   Without getting into the details (the following sections will address particular details), diagram your initial vision for handling the top-level requirements for deploying, testing, managing, monitoring, patch management compliance, securing and troubleshooting these applications in Azure IaaS. You will refine this diagram as you proceed.
 
-*Address the following customer requirements *
+*Address the following customer requirements*
 
 -   What services and approach would you take to address the need to continually update their infrastructure and configuration of their applications?
 
@@ -544,7 +544,7 @@ Azure Resource Manager is the management interface that is used to deploy and ma
 
 ## Customer quote (to be read back to the attendees at the end)
 
-*"As we jump into Azure, I'm confident that we have the right tools to ensure that our systems will perform as needed and be secure. The best part is the visibility our teams have, end-to-end, from the Applications and SQL, down to the infrastructure." *
+"As we jump into Azure, I'm confident that we have the right tools to ensure that our systems will perform as needed and be secure. The best part is the visibility our teams have, end-to-end, from the Applications and SQL, down to the infrastructure."
 
 Roberto Milian, VP of Development & IT Operations, FT
 
