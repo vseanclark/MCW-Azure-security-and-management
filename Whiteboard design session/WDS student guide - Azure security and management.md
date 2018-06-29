@@ -82,9 +82,14 @@ running on Windows VMs with SQL Server in a traditional N-tier configuration.
 Their goal is a lift and shift of these applications over to the cloud while
 gaining more control over the applications and improving their security posture.
 
-Per Roberto Milian, VP of Development and IT Operations, "Contoso's primary
-concern is how to best: deploy, test, manage, monitor, patch, secure and
-troubleshoot these applications in Azure IaaS."
+Per Roberto Milian, VP of Development and IT Operations, "Contoso is following
+Microsoft's 'Migrate > Secure > Protect > Monitor > Configure > Govern' framework
+to plan our Azure migrations and ensure our Azure deployments meet best practices. We need help with
+certain parts of this process. In particular, we need to better understand
+how to secure our Azure infrastructure, and how to monitor both our infrastructure
+and our applications."
+
+![Cycle showing Migrate, Secure, Protect, Monitor, Configure, Govern](images/image35.png "Azure Management lifecycle")
 
 Milian's team is heavily investing in DevOps and already uses PowerShell DSC with
 their applications. Six of their key Architects have just recently attended an
@@ -172,6 +177,11 @@ are being attacked.
     Monitoring solution. This means that all of the data from Application
     Performance Management (APM) should flow into the other management system.
 
+5.  Contoso are concerned about the potential complexity of having separate
+    monitoring solutions for infrastructure and applications. They are looking
+    for an integrated approach that offers consistency for log search, alerting,
+    analytics and dashboarding across all of their monitoring and diagnostics data.
+
 #### Customer objections 
 
 1.  Contoso cannot change the code of any application as a part of this
@@ -234,7 +244,10 @@ following questions on a flip chart.
 
 *Address the following customer requirements*
 
-2.  What services and approach would you take to address the need to continually
+2.  How can you deliver a single consistent experience for log search, alerting,
+    analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
+
+1.  What services and approach would you take to address the need to continually
     update their infrastructure and configuration of their applications?
 
 1.  How would changes to the configuration be tracked?
@@ -262,6 +275,7 @@ following questions on a flip chart.
     custom telemetry? How can there be a central view of the state of the
     applications? What tools are available to test performance from remote
     geographies?
+
 
 **Prepare**
 
@@ -305,6 +319,7 @@ Time frame: 15 minutes
 |    |            |
 |----------|:-------------:|
 | **Description** | **Links** |
+|Azure Management Lifecycle | <https://docs.microsoft.com/azure/monitoring/> |
 |Azure update management documentation  |  <https://docs.microsoft.com/azure/automation/automation-update-management> |
 |Change tracking documentation    |  <https://docs.microsoft.com/azure/automation/automation-change-tracking>     |
 |Azure security and operations management Documentation   | <https://docs.microsoft.com/azure/security-center/>   |
@@ -319,4 +334,3 @@ Time frame: 15 minutes
 |Management Groups | <https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview> |
 |Azure Disk Encryption | <https://docs.microsoft.com/azure/security/azure-security-disk-encryption> |
 |Network Watcher Traffic Analytics | <https://docs.microsoft.com/azure/network-watcher/traffic-analytics> |
-

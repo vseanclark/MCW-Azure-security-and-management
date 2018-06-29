@@ -202,9 +202,14 @@ running on Windows VMs with SQL Server in a traditional N-tier configuration.
 Their goal is a lift and shift of these applications over to the cloud while
 gaining more control over the applications and improving their security posture.
 
-Per Roberto Milian, VP of Development and IT Operations, "Contoso's primary
-concern is how to best: deploy, test, manage, monitor, patch, secure and
-troubleshoot these applications in Azure IaaS."
+Per Roberto Milian, VP of Development and IT Operations, "Contoso is following
+Microsoft's 'Migrate > Secure > Protect > Monitor > Configure > Govern' framework
+to plan our Azure migrations and ensure our Azure deployments meet best practices. We need help with
+certain parts of this process. In particular, we need to better understand
+how to secure our Azure infrastructure, and how to monitor both our infrastructure
+and our applications."
+
+![Cycle showing Migrate, Secure, Protect, Monitor, Configure, Govern](images/image35.png "Azure Management lifecycle")
 
 Milian's team is heavily investing in DevOps and already uses PowerShell DSC with
 their applications. Six of their key Architects have just recently attended an
@@ -292,6 +297,11 @@ are being attacked.
     Monitoring solution. This means that all of the data from Application
     Performance Management (APM) should flow into the other management system.
 
+5.  Contoso are concerned about the potential complexity of having separate
+    monitoring solutions for infrastructure and applications. They are looking
+    for an integrated approach that offers consistency for log search, alerting,
+    analytics and dashboarding across all of their monitoring and diagnostics data.
+
 #### Customer objections 
 
 1.  Contoso cannot change the code of any application as a part of this
@@ -354,7 +364,10 @@ following questions on a flip chart.
 
 *Address the following customer requirements*
 
-2.  What services and approach would you take to address the need to continually
+2.  How can you deliver a single consistent experience for log search, alerting,
+    analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
+
+1.  What services and approach would you take to address the need to continually
     update their infrastructure and configuration of their applications?
 
 1.  How would changes to the configuration be tracked?
@@ -426,6 +439,7 @@ Time frame: 15 minutes
 |    |            |
 |----------|:-------------:|
 | **Description** | **Links** |
+|Azure Management Lifecycle | <https://docs.microsoft.com/azure/monitoring/> |
 |Azure update management documentation  |  <https://docs.microsoft.com/azure/automation/automation-update-management> |
 |Change tracking documentation    |  <https://docs.microsoft.com/azure/automation/automation-change-tracking>     |
 |Azure security and operations management Documentation   | <https://docs.microsoft.com/azure/security-center/>   |
@@ -565,6 +579,20 @@ sponsorship and buy in will be important to the success of the solution.
     applications into Azure IaaS.
 
     ![The Proof of Concept Solution diagram includes Cloud Shop Application, and Azure Management and Monitoring.](images/image3.png "Proof of Concept Solution diagram")
+
+1.  How can you deliver a single consistent experience for log search, alerting, analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
+
+    - [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor "Azure Monitor overview documentation page") supports ingesting logs and metrics from multiple sources. This includes application logs, diagnostic logs, and system metrics, such as CPU load, disk capacity, and network utilization. It can also ingest the Azure Activity Log, which records all Azure administrator activity.
+    
+    - From this central hub, Azure Monitor supports log storage and archiving, log queries, visualization using the Azure Dashboard, and automation of follow-on tasks using Azure Automation.
+    
+    - In addition, logs can be passed to other services, for example to Application Insights for deeper analytics, and PowerBI for more detailed investigation and reporting. Logs can also be routed to other services, including third-party services, via Azure Event Hub.
+    
+    - Application Insights, Azure Monitor and Azure Log Analytics use the same query language (Kusto Query Language), making it easy for administrators to learn a single approach to querying all data sources.
+
+    - Azure Monitor also enables alerts to be configured, again providing a single consistent hub for managing all alerts across the platform.
+    
+    ![Diagram showing application logs, metrics, diagnostic logs, VM OS logs and Azure activity logs as data sources for Azure Monitor, with options to route data to other services, store or archive data, query data, visualize data, or automate activities based on data.](images/image34.png "Azure Monitor data sources and actions")
 
 1.  What services and approach would you take to address the need to continually
     update their infrastructure and configuration of their applications?
@@ -870,8 +898,6 @@ sponsorship and buy in will be important to the success of the solution.
       (not used in this case).
 
       ![Screenshot of the Smart detection blade.](images/image21.png "Smart detection blade")
-
-
 
 
 ## Checklist of preferred objection handling
