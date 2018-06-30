@@ -30,10 +30,10 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 - [Azure security and management whiteboard design session student guide](#azure-security-and-management-whiteboard-design-session-student-guide)
     - [Abstract and learning objectives](#abstract-and-learning-objectives)
     - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
-        - [Customer situation](#customer-situation)
-        - [Customer needs](#customer-needs)
-        - [Customer objections](#customer-objections)
-        - [Infographic for common scenarios](#infographic-for-common-scenarios)
+            - [Customer situation](#customer-situation)
+            - [Customer needs](#customer-needs)
+            - [Customer objections](#customer-objections)
+            - [Infographic for common scenarios](#infographic-for-common-scenarios)
     - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
     - [Step 3: Present the solution](#step-3-present-the-solution)
     - [Wrap-up](#wrap-up)
@@ -188,27 +188,27 @@ are being attacked.
     deployment, so all application monitoring must be done without instrumenting
     the code.
 
-1.  They believe Microsoft does their best for securing the Azure network, but
+2.  They believe Microsoft does their best for securing the Azure network, but
     they are very unsure how to detect when hackers are attacking their system.
     How will Microsoft's solution ensure we have visibility into our security
     posture?
 
-1.  SQL Server is used extensively in their application eco-system. Contoso is
+3.  SQL Server is used extensively in their application eco-system. Contoso is
     concerned about proper configuration, and they are worried SQL may not
     perform adequately on VMs in Azure. The system needs to provide feedback on
     proper configurations with the ability to drill down into how the system is
     performing, even down to the query level, showing dependences and their
     ASP.NET applications.
 
-1.  Contoso are concerned about the administrative controls. They would like to
+4.  Contoso are concerned about the administrative controls. They would like to
     ensure that only approved administrators have access to manage virtual
     machines.
 
-1.  Contoso are also concerned about how to control Azure usage without limiting
-    agility. They want to ensure controls are in place across all their
+5.  Contoso are also concerned about how to control Azure usage without limiting
+    agility. They want to ensure governance controls are in place across all their
     subscriptions to prevent usage of un-approved resources.
 
-1.  Contoso would also like to ensure all Azure VMs use best practice disk
+6.  Contoso would also like to ensure all Azure VMs use best practice disk
     encryption, with key management in accordance with Contoso company policies.
 
 #### Infographic for common scenarios
@@ -244,15 +244,15 @@ following questions on a flip chart.
 
 *Address the following customer requirements*
 
-2.  How can you deliver a single consistent experience for log search, alerting,
+1.  How can you deliver a single consistent experience for log search, alerting,
     analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
 
-1.  What services and approach would you take to address the need to continually
+2.  What services and approach would you take to address the need to continually
     update their infrastructure and configuration of their applications?
 
-1.  How would changes to the configuration be tracked?
+3.  How would changes to the configuration be tracked?
 
-1.  How will virtual machine diagnostics data be stored, tracked and made
+4.  How will virtual machine diagnostics data be stored, tracked and made
     searchable? To demonstrate this capability, Contoso have asked for a
     demonstration showing how your solution can
     -   Show the percentage availability (time running) of each computer, over
@@ -260,18 +260,18 @@ following questions on a flip chart.
     -   Identify the most frequently run processes across all VMs
     -   Chart the number of alerts raised per day, broken out by severity
 
-1.  What approach would you take for patch management and change tracking for
+5.  What approach would you take for patch management and change tracking for
     their virtual machines?
 
-1.  What solution would you recommend for monitoring their infrastructure and
+6.  What solution would you recommend for monitoring their infrastructure and
     respond against breaches? What about their servers still on-premises?
 
-1.  How can development, administrators and engineers be notified of alerts and
+7.  How can development, administrators and engineers be notified of alerts and
     keep tabs on their infrastructure, even when away from the office?
 
-1.  How can Contoso keep track of the status of their SQL Servers?
+8.  How can Contoso keep track of the status of their SQL Servers?
 
-1.  What approach would you take for web application monitoring and capturing
+9.  What approach would you take for web application monitoring and capturing
     custom telemetry? How can there be a central view of the state of the
     applications? What tools are available to test performance from remote
     geographies?

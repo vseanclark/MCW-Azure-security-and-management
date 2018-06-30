@@ -325,7 +325,7 @@ are being attacked.
     machines.
 
 1.  Contoso are also concerned about how to control Azure usage without limiting
-    agility. They want to ensure controls are in place across all their
+    agility. They want to ensure governance controls are in place across all their
     subscriptions to prevent usage of un-approved resources.
 
 1.  Contoso would also like to ensure all Azure VMs use best practice disk
@@ -519,13 +519,13 @@ sponsorship and buy in will be important to the success of the solution.
 
 *High-level architecture*
 
-1.  *Without getting into the details (the following sections will address
+-  *Without getting into the details (the following sections will address
     particular details), diagram your initial vision for handling the top-level
     requirements for deploying, testing, managing, monitoring, patch management
     compliance, securing and troubleshooting these applications in Azure IaaS.
     You will refine this diagram as you proceed.*
 
-    Contoso and Microsoft have worked closely along with a partner, to design a
+-   Contoso and Microsoft have worked closely along with a partner, to design a
     solution that meets the needs for migrating the e-commerce applications to
     Azure. A "Lift & Shift" approach is being proposed.
 
@@ -592,9 +592,9 @@ sponsorship and buy in will be important to the success of the solution.
 
     - Azure Monitor also enables alerts to be configured, again providing a single consistent hub for managing all alerts across the platform.
     
-    ![Diagram showing application logs, metrics, diagnostic logs, VM OS logs and Azure activity logs as data sources for Azure Monitor, with options to route data to other services, store or archive data, query data, visualize data, or automate activities based on data.](images/image34.png "Azure Monitor data sources and actions")
+        ![Diagram showing application logs, metrics, diagnostic logs, VM OS logs and Azure activity logs as data sources for Azure Monitor, with options to route data to other services, store or archive data, query data, visualize data, or automate activities based on data.](images/image34.png "Azure Monitor data sources and actions")
 
-1.  What services and approach would you take to address the need to continually
+2.  What services and approach would you take to address the need to continually
     update their infrastructure and configuration of their applications?
 
     -  Deployment and control of their applications using Azure Automation DSC
@@ -611,9 +611,9 @@ sponsorship and buy in will be important to the success of the solution.
        Deployment can be done via the Portal, Visual Studio, PowerShell or the
        Azure CLI leveraging a Source Control Platform such as GitHub.
 
-    ![The DevOps - People, Process, Tools diagram has the following steps: Developers, Code Repository, Build, Test, Deploy, Contoso App, and Monitor and Improve.](images/image4.png "DevOps - People, Process, Tools diagram")
+        ![The DevOps - People, Process, Tools diagram has the following steps: Developers, Code Repository, Build, Test, Deploy, Contoso App, and Monitor and Improve.](images/image4.png "DevOps - People, Process, Tools diagram")
 
-1.  How would changes to the configuration be tracked?
+3.  How would changes to the configuration be tracked?
 
     -  Using an Infrastructure as Code approach, all DSC configurations and
        Resource Manager Templates will be managed using a source control system
@@ -623,7 +623,7 @@ sponsorship and buy in will be important to the success of the solution.
        Analytics. This integration enables easy and powerful searching, and
        alerting.
 
-1.  How will virtual machine diagnostics data be stored, tracked and made
+4.  How will virtual machine diagnostics data be stored, tracked and made
     searchable? 
 
     -  VM diagnostics will be enabled and configured to send logs to Log
@@ -675,7 +675,7 @@ sponsorship and buy in will be important to the success of the solution.
            | render barchart kind=unstacked
            ```
 
-1.  What approach would you take for patch management and change tracking for
+5.  What approach would you take for patch management and change tracking for
     their virtual machines?
 
     -  Use the Infrastructure monitoring and management solution, which supports
@@ -687,7 +687,7 @@ sponsorship and buy in will be important to the success of the solution.
        unlock immediate value from this massive amount of log data. Also,
        ad-hock queries can be performed an easy to learn query language.
 
-    ![A callout in the Log Search blade points to the formula \*Type=SecurityBaseline.](images/image5.png "Log Search blade")
+        ![A callout in the Log Search blade points to the formula \*Type=SecurityBaseline.](images/image5.png "Log Search blade")
 
     Patch Management Compliance
 
@@ -717,7 +717,7 @@ sponsorship and buy in will be important to the success of the solution.
       install of the updates. Of course, access to either a WSUS server, or
       access to Microsoft Update, is required.
 
-      ![Screenshot of the New Update Deployment blade, showing the update settings as described in the previous text.](images/image27.png "Azure Automation Update Deployment")
+        ![Screenshot of the New Update Deployment blade, showing the update settings as described in the previous text.](images/image27.png "Azure Automation Update Deployment")
   
     Change Tracking
 
@@ -734,7 +734,7 @@ sponsorship and buy in will be important to the success of the solution.
 
     ![Log Analytics data displays as previously described.](images/image7.png "Log Analytics data")
 
-1.  What solution would you recommend for monitoring their infrastructure and
+6.  What solution would you recommend for monitoring their infrastructure and
     respond against breaches? What about their servers still on-premises?
 
     -   Security Dashboards and Forensics
@@ -778,7 +778,7 @@ sponsorship and buy in will be important to the success of the solution.
 
         ![Screen capture of a Service Map.](images/image9.png "Service Map")
 
-1.  How can development, administrators and engineers be notified of alerts and
+7.  How can development, administrators and engineers be notified of alerts and
     keep tabs on their infrastructure, even when away from the office?
 
     -  Custom Alerts that can trigger email notifications and push notifications
@@ -804,7 +804,7 @@ sponsorship and buy in will be important to the success of the solution.
       application also will allow for push notifications to these smart devices,
       so that alerts will come through as true smartphone notifications.
 
-1.  How can Contoso keep track of the status of their SQL Servers?
+8.  How can Contoso keep track of the status of their SQL Servers?
 
     - SQL Server Management capabilities
 
@@ -812,7 +812,7 @@ sponsorship and buy in will be important to the success of the solution.
       platform. Contoso can use the data in Log Analytics to assess the risk and
       health of their server environment.
 
-1.  What approach would you take for web application monitoring and capturing
+9.  What approach would you take for web application monitoring and capturing
     custom telemetry? How can there be a central view of the state of the
     applications? What tools are available to test performance from remote
     geographies?
@@ -948,7 +948,19 @@ sponsorship and buy in will be important to the success of the solution.
 
     ![Screenshot of Network Watcher Traffic Analytics.](images/image30.png "Network Watcher Traffic Analytics")
 
-1.  Contoso are concerned about the administrative controls. They would like to
+
+3.  SQL Server is used extensively in their application eco-system. Contoso is
+    concerned about proper configuration, and they are worried SQL may not
+    perform adequately on VMs in Azure. The system needs to provide feedback on
+    proper configurations with the ability to drill down into how the system is
+    performing, even down to the query level, showing dependences and their
+    ASP.NET applications.
+    
+    - The SQL Server Assessment that is part of Security Center can be implemented with just a few clicks by Contoso. This assessment will run once a week and the teams can stay ahead potential issues and will have step-by-step remediation’s to know problems and misconfigurations.
+
+        ![Screenshot of the Availability and Business continuity section, and Prioritized Recommendations.](images/objection3.png "SQL Server Assessment sections")
+
+4.  Contoso are concerned about the administrative controls. They would like to
     ensure that only approved administrators have access to manage virtual
     machines.
 
@@ -962,8 +974,8 @@ sponsorship and buy in will be important to the success of the solution.
 
       ![Azure portal screenshot showing the built-in roles that are applicable to an Azure Virtual Machine.](images/image31.png "Roles applicable to Virtual Machines")
 
-1.  Contoso are also concerned about how to control Azure usage without limiting
-    agility. They want to ensure controls are in place across all their
+5.  Contoso are also concerned about how to control Azure usage without limiting
+    agility. They want to ensure governance controls are in place across all their
     subscriptions to prevent usage of un-approved resources.
 
     - Contoso can use Azure Policy to control which resources can be
@@ -980,7 +992,7 @@ sponsorship and buy in will be important to the success of the solution.
       rather than at the Azure subscription scope, the Policy will automatically
       be applied to all subscriptions within their tenant.
 
-1.  Contoso would also like to ensure all Azure VMs use best practice disk
+6.  Contoso would also like to ensure all Azure VMs use best practice disk
     encryption, with key management in accordance with Contoso company policies.
 
     - All Azure VM disks (both managed and unmanaged) benefit from the always-on
