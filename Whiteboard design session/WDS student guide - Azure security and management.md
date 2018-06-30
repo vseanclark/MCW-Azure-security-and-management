@@ -30,10 +30,10 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 - [Azure security and management whiteboard design session student guide](#azure-security-and-management-whiteboard-design-session-student-guide)
     - [Abstract and learning objectives](#abstract-and-learning-objectives)
     - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
-            - [Customer situation](#customer-situation)
-            - [Customer needs](#customer-needs)
-            - [Customer objections](#customer-objections)
-            - [Infographic for common scenarios](#infographic-for-common-scenarios)
+        - [Customer situation](#customer-situation)
+        - [Customer needs](#customer-needs)
+        - [Customer objections](#customer-objections)
+        - [Infographic for common scenarios](#infographic-for-common-scenarios)
     - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
     - [Step 3: Present the solution](#step-3-present-the-solution)
     - [Wrap-up](#wrap-up)
@@ -59,7 +59,7 @@ Directions: With all participants in the session, the facilitator/SME presents a
 3.  As a table team, review the following customer case study
 
 
-#### Customer situation
+### Customer situation
 
 Contoso Holdings  is a multi-national holding company headquartered in Los
 Angeles, CA that owns 48 manufacturing companies located in North America,
@@ -128,7 +128,7 @@ level of access to the system is allowed and they need to be alerted if systems
 are being attacked.
 
 
-#### Customer needs 
+### Customer needs 
 
 1.  Contoso wants to continue to embrace their move toward DevOps techniques, as
     they move to Azure. They want to move to an Infrastructure as Code model for
@@ -182,7 +182,7 @@ are being attacked.
     for an integrated approach that offers consistency for log search, alerting,
     analytics and dashboarding across all of their monitoring and diagnostics data.
 
-#### Customer objections 
+### Customer objections 
 
 1.  Contoso cannot change the code of any application as a part of this
     deployment, so all application monitoring must be done without instrumenting
@@ -211,9 +211,9 @@ are being attacked.
 6.  Contoso would also like to ensure all Azure VMs use best practice disk
     encryption, with key management in accordance with Contoso company policies.
 
-#### Infographic for common scenarios
+### Infographic for common scenarios
 
-![Common scenarios include Log analytics, automation, monitor, security, and app insights.](images/image2.png "Common scenarios")
+![Common scenarios include Migrate, Secure, Protect, Monitor, Configure and Govern.](images/image2.png "Common scenarios")
 
 ## Step 2: Design a proof of concept solution
 

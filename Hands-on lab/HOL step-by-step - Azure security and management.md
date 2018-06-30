@@ -1296,7 +1296,6 @@ Understanding what is happening within an application can be very challenging, b
 
 3.  The **Performance** feature of Application Insights allows us to get rich performance monitoring and easy to consume dashboards.
 
-    ![The Performance Monitoring dashboard displays.](images/Lab-guide/image180.png "Performance Monitoring dashboard")
 
 4.  This dashboard gives near real-time insight into the performance of your application.
 	In the screenshot below, you can see this application appears to have a performance issue with the Home/Index page. It appears to be taking 20.5 seconds on average to load. NOTE: Your numbers may not match. By clicking on the GET Home/Index, you will see the other sections of the dashboard will filter to performance data focused on that page.
@@ -1305,7 +1304,6 @@ Understanding what is happening within an application can be very challenging, b
 
 5.  Feel free to experiment with this dashboard to understand the performance considerations of your application.
 
-    ![Screenshot of the Operations dashboard.](images/Lab-guide/image182.png "Operations dashboard")
 
 6.  Pin the 'Operation times' chart to to My Dashboard by clicking on the pin in the top right of the chart.
 
