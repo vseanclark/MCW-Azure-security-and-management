@@ -172,8 +172,11 @@ In this session, the customer is looking for managing and monitoring solutions f
 **Outcome** 
 
 Analyze your customer’s needs.
+
 Timeframe: 15 minutes 
+
 Directions: With all participants in the session, the facilitator/SME presents an overview of the customer case study along with technical tips. 
+
 1.  Meet your table participants and trainer 
 2.  Read all of the directions for steps 1–3 in the student guide 
 3.  As a table team, review the following customer case study
@@ -537,19 +540,23 @@ sponsorship and buy in will be important to the success of the solution.
        the systems will be made by checking the template out of source control,
        making changes, testing them thoroughly, then deploying the updated
        template via automation.
+       
     -  **Azure Security Center**: Azure Security Center provides a unified view
        into the security posture of your hybrid cloud workloads, enabling you
        discover and assess the security of your workloads and to identify and
        mitigate risk.
+       
     -  **Azure Monitor:** Azure Monitor provides base-level infrastructure
        metrics and logs for most services in Microsoft Azure. Azure services
        that do not yet put their data into Azure Monitor will put it there in
        the future.
+       
     -  **Log Analytics** provides centralized log ingestion and in-depth
        analytics. A variety of 'solution packs' within Log Analytics will be
        used, for update management, change tracking and understanding
        application dependencies. Azure Security Center also uses Log Analytics
        as its underlying engine.
+       
     -  **Application Insights:** Application Insights is an extensible APM
        service for web developers on multiple platforms. It can be used to
        monitor the Contoso live web applications. The data supplied to the Azure
@@ -561,9 +568,11 @@ sponsorship and buy in will be important to the success of the solution.
        Applications Insights solution. App Insights has many capabilities that
        meet the monitoring, alerting, testing and dependency drill through that
        Contoso stated are critical for their deployment.
+       
     -  **Azure Automation** provides a framework for deploying application
        updates and OS patches across the virtual machine infrastructure, using
        PowerShell DSC.
+       
     -  **Azure Network Watcher** provides additional visibility into network
        configuration, traffic and performance. In particular, the Traffic
        Analytics feature of Network Watcher helps understand your network
