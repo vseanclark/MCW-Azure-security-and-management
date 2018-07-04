@@ -694,12 +694,13 @@ The Update Management functionality will be configured through your Virtual Mach
 
 The Update Management functionality will be configured through Azure Automation.
 
-1.  In the **Azure Portal**, browse to **WEBVM1**.
+1.  In the **Azure Portal**, browse to **WEBVM1**
 
-2.  Select **Change tracking** under **OPERATIONS**.\
+2.  Select **Change tracking** under **OPERATIONS**
+
     ![Under Operations, Change tracking is selected.](images/Lab-guide/image95.png "Operations section")
 
-3.  Verify the **Log Analytics workspace** and **Automation Account** and click **Enable**.
+3.  Verify the **Log Analytics workspace** and **Automation Account** and select **Enable**
 
 > ![The Enable button is selected in the Change Tracking window.](images/Lab-guide/image96.png "Change Tracking window")
 
@@ -709,11 +710,12 @@ The Update Management functionality will be configured through Azure Automation.
 
 Do not navigate away from the Update Management blade until the deployment message reads "The 'Change Tracking and Inventory' solution is being deployed on this virtual machine. This can take a few minutes. You can do other work while this is in progress."
 
-5.  While the solution is deploying, navigate to **WEBVM2** and repeat steps 2-4.
+5.  While the solution is deploying, navigate to **WEBVM2** and repeat steps 2-4
 
-6.  While the solution is deploying, navigate to **SQLVM** and repeat steps 2-4.
+6.  While the solution is deploying, navigate to **SQLVM** and repeat steps 2-4
 
-7.  Verify that the solution has been deployed by navigating to **WEBVM1** and clicking on **Change tracking** under OPERATIONS.\
+7.  Verify that the solution has been deployed by navigating to **WEBVM1** and clicking on **Change tracking** under OPERATIONS
+
     ![Under Operations, Change tracking is selected.](images/Lab-guide/image95.png "Operations section")
 
     ![Changes shows as zero.](images/Lab-guide/image98.png "Changes status")
@@ -734,21 +736,21 @@ In this exercise, you will instrument the CloudShop using Application Insights a
 
 To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
-1.  Open a Remote Desktop Connection to **WEBVM1**.
+1.  Open a Remote Desktop Connection to **WEBVM1**
 
-2.  Open Internet Explorer and follow this link: <http://bit.ly/2jxQ43z>. Click **Run** on the Question if you want to run the file: **AppliationsInsightsMonitor.exe**.
+2.  Open Internet Explorer and follow this link: <http://bit.ly/2jxQ43z>. Select **Run** on the Question if you want to run the file: **AppliationsInsightsMonitor.exe**.
 
     ![The Run button is selected next to the question asking if you want to run or save the file.](images/Lab-guide/image99.png "Run or Save option")
 
-3.  This will start the Web Platform Installer. Click **Install** followed by **I Accept** on the following screen, and **Continue**.
+3.  This will start the Web Platform Installer. Select **Install** followed by **I Accept** on the following screen, and **Continue**.
 
     ![Screenshot of the Web Platform installer with the Install button selected.](images/Lab-guide/image100.png "Web Platform installer")
 
-4.  Once the Monitor is installed, click the **Sign In** link under the **Configuration**.
+4.  Once the Monitor is installed, select the **Sign In** link under the **Configuration**
 
     ![Sign in is selected in the Application Insights Status Monitor window.](images/Lab-guide/image101.png "Application Insights Status Monitor window")
 
-5.  You will sign-in to Azure as normal.
+5.  You will sign-in to Azure as normal
 
     ![Screenshot of the Azure sign in box.](images/Lab-guide/image102.png "Azure sign in box")
 
@@ -756,7 +758,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     ![Under Configuration, Send telemetry to is set to New Application Insights resource and the Configure settings button is selected.](images/Lab-guide/image103.png "Configuration section")
 
-7.  On the **Configuration settings for Application Insights**, complete the information as follows, and click **OK**.
+7.  On the **Configuration settings for Application Insights**, complete the information as follows, and select **OK**
 
     a.  Microsoft Azure Subscriptions: **Use the same subscription**
 
@@ -768,13 +770,13 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
         ![Fields in the Configuration settings for Application Insights dialog box are set to the previously defined settings.](images/Lab-guide/image104.png "Configuration settings dialog box")
 
-8.  This will build the Application Insights workspace for you in Azure.
+8.  This will build the Application Insights workspace for you in Azure
 
-9.  Next, click **Add** **Application Insights**.
+9.  Next, select **Add Application Insights**
 
     ![In the Default Web Site section, the Add Application Insights button is selected.](images/Lab-guide/image105.png "Default Web Site section")
 
-10. Click **Restart IIS** to complete the Setup.
+10. Click **Restart IIS** to complete the Setup
 
     ![Screenshot of the Restart IIS button.](images/Lab-guide/image106.png "Restart IIS button")
 
@@ -782,23 +784,23 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     ![IIS applications show as enabled in the Application Insights Status Monitor, and under Default Web Site, Status is Application Insights enabled, and Data is set to the specified Application Insights resource.](images/Lab-guide/image107.png "Application Insights Status Monitor")
 
-12. Disconnect from **WEBVM1**.
+12. Disconnect from **WEBVM1**
 
-13. Connect to a Remote Desktop Session for **WEBVM2**.
+13. Connect to a Remote Desktop Session for **WEBVM2**
 
-14. Open Internet Explorer and follow this link: <http://bit.ly/2jxQ43z>. Click **Run** on the Question if you want to run the file: **AppliationsInsightsMonitor.exe**.
+14. Open Internet Explorer and follow this link: <http://bit.ly/2jxQ43z>. Select **Run** on the Question if you want to run the file: **AppliationsInsightsMonitor.exe**.
 
     ![Screenshot of the Run button.](images/Lab-guide/image99.png "Run button")
 
-15. This will start the Web Platform Installer. Click **Install** followed by **I Accept** on the following screen, and **Continue**.
+15. This will start the Web Platform Installer. Click on **Install** followed by **I Accept** on the following screen, and **Continue**.
 
     ![On the Web Platform Installer, under Application Insights Status Monitor, the Install button is selected.](images/Lab-guide/image100.png "Web Platform Installer")
 
-16. Once the Monitor is installed, click the **Sign In** link under the **Configuration**.
+16. Once the Monitor is installed, select the **Sign In** link under the **Configuration**
 
     ![In the Application Insights Status Monitor, Sign in is selected.](images/Lab-guide/image101.png "Application Insights Status Monitor ")
 
-17. You will sign-in to Azure as normal.
+17. You will sign-in to Azure as normal
 
 > ![Screenshot of the Microsoft Sign in box.](images/Lab-guide/image102.png "Microsoft Sign in box")
 
@@ -806,23 +808,23 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     ![Send telemetry to is set to Existing Application Insights resource, and Configure settings is selected.](images/Lab-guide/image108.png "Send telemetry to section")
 
-19. On the **Configuration settings for Application Insights**, complete the information as follows, and click **OK**.
+19. On the **Configuration settings for Application Insights**, complete the information as follows, and select **OK**
 
-    e.  Microsoft Azure Subscriptions: **Use the same subscription**
+    a.  Microsoft Azure Subscriptions: **Use the same subscription**
 
-    f.  Resource Groups: **HOLInsights**
+    b.  Resource Groups: **HOLInsights**
 
-    g.  Application Insights Resource: **HOLCloudShop**
+    c.  Application Insights Resource: **HOLCloudShop**
 
-    h.  Location: **Select the same region as your deployment**
+    d.  Location: **Select the same region as your deployment**
 
         ![Fields in the Configuration Settings for Application Insights dialog box are set to the previously defined settings.](images/Lab-guide/image109.png "Configuration Settings for Application Insights dialog box")
 
-20. This will attach **WEBVM2** to the Application Insights workspace you created a moment ago in Azure. Next, click **Add** **Application Insights**.
+20. This will attach **WEBVM2** to the Application Insights workspace you created a moment ago in Azure. Next, select **Add** **Application Insights**.
 
     ![Under Default Web Site, the Add Application Insights button is selected.](images/Lab-guide/image110.png "Default Web Site section")
 
-21. Click **Restart IIS** to complete the Setup.
+21. Select **Restart IIS** to complete the Setup
 
     ![Screenshot of the Restart IIS button.](images/Lab-guide/image106.png "Restart IIS button")
 
@@ -830,160 +832,160 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 ### Task 2: Explore the Application Map, configure alerts, availability tests, and performance tests
 
-1.  Open the Application Insights blade by clicking **All services**, followed by **Application Insights** (use the search filter to help you find it).
+1.  Open the Application Insights blade by clicking **All services**, followed by **Application Insights** (use the search filter to help you find it)
 
     ![Screenshot showing click path to open Applicaiton Insights.](images/Lab-guide/image111.png "Open Application Insights")
 
-1.  Click **HOLCloudShop**, followed by **Application map**.
+2.  Select **HOLCloudShop**, followed by **Application map**
 
     ![Screenshot showing clicks for HOLCloudShop (1) and Application map (2).](images/Lab-guide/image112.png "Open HOLCloudShop Application Map")
 
 
-1.  Take a few minutes to explore the Application map. Click on each node in the application map, and look at the data available.
+3.  Take a few minutes to explore the Application map. Click on each node in the application map, and look at the data available.
 
 	![Screenshot of the Application Map.](images/Lab-guide/image114.png "Application Map")
 
-1.  Close the **Application Map** pane, then Click on the **Alerts (Classic)** in the **Configure** section of the Application Insights blade.
+4.  Close the **Application Map** pane, then Click on the **Alerts (Classic)** in the **Configure** section of the Application Insights blade.
 
     ![Under Configure, Alerts (Classic) is selected.](images/Lab-guide/image115.png "Alerts (Classic) selection")
 
-1.  Click **+Add Metric Alert,** complete the blade with the following information, and click **OK**.
+5.  Select **+Add Metric Alert,** complete the blade with the following information, and select **OK**
 
     a.  Name: **CloudShopProcessorAlert**
 
-    c.  Metric: **Processor Time**
+    b.  Metric: **Processor Time**
 
-    d.  Condition: **Greater than**
+    c.  Condition: **Greater than**
 
-    e.  Threshold: **80**
+    d.  Threshold: **80**
 
-    f.  Period: **Over the last 5 minutes**
+    e.  Period: **Over the last 5 minutes**
 
-    g.  Notify via: Email owners, contributors and readers -- **Check the Box**
+    f.  Notify via: Email owners, contributors and readers -- **Check the Box**
 
         ![Add rule blade fields are set to the previously defined settings.](images/Lab-guide/image116.png "Add rule blade")
 
         ![Screenshot of the rest of the Add rule blade fields.](images/Lab-guide/image117.png "Add rule blade fields - continued")
 
-1.  Click **OK** to save the alert.  The portal will update with the new Alert.
+6.  Select **OK** to save the alert.  The portal will update with the new Alert.
 
     ![Alert settings for CloudShopProcessorAlert display.](images/Lab-guide/image118.png "Alert settings")
 
-1.  In your **HOLRG,** locate the **hackathonPublicIP** Public IP Address, and take note of the DNS name which is on the front of the Azure Load Balancer for the CloudShop App running on **WEBVM1** & **WEBVM2**.
+7.  In your **HOLRG,** locate the **hackathonPublicIP** Public IP Address, take note of the DNS name which is on the front of the Azure Load Balancer for the CloudShop App running on **WEBVM1** & **WEBVM2**
 
-1.  Next in the **HOLCloudShop** Application Insights workspace, under the **Investigate** section, and click **Availability**.
+8.  Next in the **HOLCloudShop** Application Insights workspace, under the **Investigate** section, select **Availability**
 
     ![Under Investigate, Availability is selected.](images/Lab-guide/image119.png "Investigate section")
 
-1.  Click **+Add test**, and complete the blade using the following information. Then, click **Create**.
+9.  Select **+Add test**, and complete the blade using the following information. Then, select **Create**.
 
     a.  Test name: **CloudShopWebTest**
 
-    i.  Test type: **URL Ping Test**
+    b.  Test type: **URL Ping Test**
 
-    j.  URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
+    c.  URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
 
-    k.  Test locations: Choose locations from all over the world
+    d.  Test locations: Choose locations from all over the world
 
-    l.  All other accept defaults
+    e.  All other accept defaults
 
     ![Create test blade fields are set to the previously defined settings.](images/Lab-guide/image120.png "Create test blade")
 
-1.  Click **Create** to crate the availability test.
+10.  Select **Create** to crate the availability test
 
 	NOTE: If the CloudShop Application becomes unavailable to this WebTest, you will then receive an email alert from Azure Application Insights.
 
-1.  Click **Performance Testing** in the **Configure** section.
+11.  Select **Performance Testing** in the **Configure** section
 
     ![Under Configure, Performance Testing is selected.](images/Lab-guide/image121.png "Configure section")
 
-1.  Click **+New**.
+12.  Select **+New**
 
-1.  Click **Configure Test Using** and complete this using these inputs. Then, click **Done**.
+13.  Click on **Configure Test Using** and complete this using these inputs. Then, select **Done**.
 
     a.  Test Type: Manual Test
 
-    n.  URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
+    b.  URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
 
 	![Fields in the Configure test using blade are set to the previously defined settings.](images/Lab-guide/image122.png "Configure test using blade")
 
-1.  Complete the **New Performance Test** blade using the following information, and click **Run Test**.
+14.  Complete the **New Performance Test** blade using the following information, and click **Run Test**.
 
     a.  Name: **CloudShopLoadTest**
 
-    p.  Generate Load from: **Select a Region**
+    b.  Generate Load from: **Select a Region**
 
-    q.  User Load: **2000**
+    c.  User Load: **2000**
 
-    r.  Duration: **5**
+    d.  Duration: **5**
 
         ![Fields in the New performance test blade are set to the previously defined settings.](images/Lab-guide/image123.png "New performance test blade")
 
-1.  Click **Run Test** to start the performance test.
+15.  Select **Run Test** to start the performance test
 
 	NOTE: An error may occur if you do not have a Visual Studio Team Services (VSTS) Account configured. If so, then you'll need to create one before setting up the Performance Test.
 
-1.  Once this is submitted it will show as **Queued.** Click the line and then details about the performance test will be shown.
+16.  Once this is submitted it will show as **Queued.** Select the line and then details about the performance test will be shown.
 
     ![CloudShopLoadTest is selected under Recent runs in the Performance Testing blade.](images/Lab-guide/image124.png "Performance Testing blade")
 
-1.  Click the Messages box to see the details of the test.
+17.  Select the Messages box to see the details of the test
 
 	![Screenshot of the CloudShopLoadTest and Status Messages blades. In the CloudShopLoadTest blade, the Messages box is selected.](images/Lab-guide/image125.png "CloudShopLoadTest and Status Messages blades")
 
-1.  Now, head back to the Overview blade of the **HOLCloudShop** Application Insights and click **Live Metrics Stream**.
+18.  Now, head back to the Overview blade of the **HOLCloudShop** Application Insights and select **Live Metrics Stream**
 
     ![The Live Stream tile lists two servers.](images/Lab-guide/image126.png "Live Stream tile")
 
-1.  Real-time application information can be seen regarding the CloudShop App running in Azure on our IaaS VMs. Here, you can wait for the Performance Test to run, and show how the Web Application performs.
+19.  Real-time application information can be seen regarding the CloudShop App running in Azure on our IaaS VMs. Here, you can wait for the Performance Test to run, and show how the Web Application performs.
 
     ![Screenshot of the Live Metrics Stream page, with Incoming Requests, Outgoing Requests, and Overall Health, line and scatter graphs, and Server information.](images/Lab-guide/image127.png "Live Metrics Stream page")
 
-1.  If you go back to the **Performance Testing** blade, and click on **CloudShopLoadTest,** you will see the metrics form the run.
+20.  If you go back to the **Performance Testing** blade, and click on **CloudShopLoadTest,** you will see the metrics form the run
 
     ![Screenshot of Performance under load metrics.](images/Lab-guide/image128.png "Performance under load metrics")![Screenshot of the Requests donut chart.](images/Lab-guide/image129.png "Requests graph")
 
-1.  Close the Performance Test, and click on the **Performance** under Investigate.
+21.  Close the Performance Test, and click on the **Performance** under Investigate
 
     ![Under Investigate, Performance (preview) is selected.](images/Lab-guide/image130.png "Investigate section")
 
-1.  Explore the metrics from the CloudShop Application.
+22.  Explore the metrics from the CloudShop Application
 
     ![Screenshot of the CloudShop Application desktop.](images/Lab-guide/image131.png "CloudShop Application desktop")
 
-1.  The Load Test should also have caused the alert on high processor usage to be trigged. An email should have been received.
+23.  The Load Test should also have caused the alert on high processor usage to be trigged. An email should have been received.
 
     ![Screenshot of an Azure Application Insights warning alert.](images/Lab-guide/image132.png "Azure Application Insights alert")
 
 	NOTE: The email may take several minutes to arrive. You can proceed with the lab and check for the email later.
 
-1.  The alert will quickly resolve as the Load Test has completed causing the CPU condition to quiet.
+24.  The alert will quickly resolve as the Load Test has completed causing the CPU condition to quiet
 
     ![Screenshot of an Azure Application Insights success message.](images/Lab-guide/image133.png "Azure Application Insights success message")
 
 ### Task 3: Simulate a failure of the CloudShop application
 
-1.  Move to your **HOLRG** Resource group and stop both **WEBVM1** and **WEBVM2**.
+1.  Move to your **HOLRG** Resource group and stop both **WEBVM1** and **WEBVM2**
 
-2.  Navigate back to the **HOLCloudShop** Application Insights portal. Click **Availability**, and notice that the availability tests have start to fail once the web VMs are stopped.
+2.  Navigate back to the **HOLCloudShop** Application Insights portal. Select **Availability**, and notice that the availability tests have start to fail once the web VMs are stopped.
 
     ![On the Application Insights blade, the Availability blade shows the web tests failing](images/Lab-guide/image134.png "Application Insights Availability blade")
 
-3.  Click **CloudShopWebTest** to open the test summary blade. Notice how the tests are failing from all regions.
+3.  Select **CloudShopWebTest** to open the test summary blade. Notice how the tests are failing from all regions.
 
     ![Screenshot showing CloudShopWebTest details chart and test location status.](images/Lab-guide/image135.png "CloudShopWebTest summary")
 
-5.  A few email alerts should come into your inbox.
+5.  A few email alerts should come into your inbox:
 
     ![Azure Application Insights warning alert screenshot](images/Lab-guide/image137.png "Azure Application Insights warning alert")
 
     ![Azure Application Insights details screenshot](images/Lab-guide/image138.png "Azure Application Insights details")
 
-6.  Click the "See the analysis of this issue" which will load the Azure portal.
+6.  Select the "See the analysis of this issue" which will load the Azure portal
 
     ![Both the Smart Detection and An abnormal rise in failed request rate blades display.](images/Lab-guide/image139.png "Smart Detection and An abnormal rise in failed request rate blades")
 
-7.  Move back to your **HOLRG and** restart the VMs.
+7.  Move back to your **HOLRG and** restart the VMs
 
 8.  Once the VMs are back online, the website will come back up. This will initiate responses to the Web Test and sending data to the Applications Insights portal. An email will be sent resolving the Alert. After a period of time, the Smart Detection Alert will also resolve.
 
@@ -1005,25 +1007,25 @@ In this exercise, you will explore the information and data being provided by Az
 
 In this section, we will perform an ad-hoc search in Log Analytics data to see where our servers are not in compliance with security baselines. In the Log Search interface, we can perform ad-hoc searches against the log data being ingested into the Log Analytics service. Because the data is indexed, searching is very fast.
 
-1.  Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*monitor*", and selecting **Monitor**.
+1.  Open the **Azure portal** and navigate to Azure Monitor by clicking on **All services**, searching for "*monitor*", and selecting **Monitor**
 
     ![Selections in the Azure Portal display as previously mentioned.](images/Lab-guide/image66.png "Azure Portal")
 
-2.  Select **Log Analytics** under **SHARED SERVICES** to navigate to your workspace.
+2.  Select **Log Analytics** under **SHARED SERVICES** to navigate to your workspace
 
     ![Under Shared Services, Log Analytics is selected.](images/Lab-guide/image141.png "Shared Services section")
 
-3.  In the query editor, enter the following query: *Update \| where OSType!=\"Linux\" and Optional==false*. Click Run. This will search the Update management logs and report results. There are many other data sources we can query.
+3.  In the query editor, enter the following query: *Update \| where OSType!=\"Linux\" and Optional==false*. Select Run. This will search the Update management logs and report results. There are many other data sources we can query.
 
     ![Screenshot of the Log Search blade.](images/Lab-guide/image142.png "Log Search blade")
 
     NOTE: you may have less or more data, but keep in mind, the service has only been collecting data since you began the lab.
 
-4.  Notice in the left, there are different types of data. Click **Windows Defender** followed by **Apply**.
+4.  Notice in the left, there are different types of data. Select **Windows Defender** followed by **Apply**.
 
     ![Under product, both the Windows Defender checkbox and the Apply button are selected.](images/Lab-guide/image143.png "Product section")
 
-5.  Notice the query dialog (where you entered a search before) has a search string in it querying for the type "Product==Windows Defender".
+5.  Notice the query dialog (where you entered a search before) has a search string in it querying for the type "Product==Windows Defender"
 
     ![An updated search string displays in the Query dialog box.](images/Lab-guide/image144.png "Query dialog box")
 
@@ -1047,7 +1049,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
     ![The Exporting results to Excel message displays.](images/Lab-guide/image149.png "Exporting results message")
 
-11. Once the report is exported, you are prompted what to do with the file. Click on **Save**. Once completed, click on **Open**. Choose **Notepad** to open the file**.**
+11. Once the report is exported, you are prompted what to do with the file. Select **Save**. Once completed, click on **Open**. Choose **Notepad** to open the file**.
 
    ![The first message asking if you want to save SearchResults.csv has the Save button selected. The second message, download has completed has the Open button selected. The third message asks how you want to open the file, and Notepad is selected.](images/Lab-guide/image150.png "Multiple messages")
 
@@ -1059,7 +1061,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
     ![Screenshot of a Search query with the Copy option selected.](images/Lab-guide/image152.png "Search query")
 
-14. Click the **Saved Searches** followed by **+Add.**
+14. Click the **Saved Searches** followed by **+Add**
 
     ![Saved Searches is selected from the Log Search blade top menu.](images/Lab-guide/image153.png "Log Search blade top menu")
 
@@ -1075,9 +1077,9 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
         ![Add Saved Search blade fields are set to the previously defined settings.](images/Lab-guide/image154.png "Add Saved Search blade")
 
-16. Click **OK.**
+16. Select **OK.**
 
-1.  Let's explore some more sample queries. These are taken from the repository at <https://github.com/MicrosoftDocs/LogAnalyticsExamples/tree/master/log-analytics>.
+17.  Let's explore some more sample queries. These are taken from the repository at <https://github.com/MicrosoftDocs/LogAnalyticsExamples/tree/master/log-analytics>.
 
     Replace the current query with the following:
     ```
@@ -1092,13 +1094,13 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
     ```
     Click **Run**.
 
-1.  Select **Table** output. Notice how this query calculates VM availability, based on heartbeats.
+18.  Select **Table** output. Notice how this query calculates VM availability, based on heartbeats.
 
     ![Screenshot showing the preceeding query in Log Analytics, with a table showing the %age availability of each VM.](images/Lab-guide/image185.png "Log Search showing VM availability query")
 
     For more information on how this query works, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/server-availability-rate.md>.
 
-1.  Replace the current query with the following:
+19.  Replace the current query with the following:
     ```
     // Find all processes that started in the last 3 days. ID 4688: A new process has been created.
     let RunProcesses = 
@@ -1124,11 +1126,11 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
 In this section, we will use the Security Center Overview screen to review what preventative steps we can take to protect our environment.
 
-1.  Within **Security Center** **Overview** page, there are five tiles in the middle of the screen under **Resource security hygiene**.
+1.  Within **Security Center** **Overview** page, there are five tiles in the middle of the screen under **Resource security hygiene**
 
     ![On the Security Center Overview page, under Prevention, four tiles display: Recommendations, Compute & Apps, Networking, Data & storage, and Identity & access.](images/Lab-guide/image155.png "Security Center Overview page Resource security hygiene tiles")
 
-2.  Click on the **Compute** tile to drill into the security health of your compute resources.
+2.  Click on the **Compute** tile to drill into the security health of your compute resources
 
     ![Screenshot of the Compute & apps tile.](images/Lab-guide/image156.png "Compute & apps tile")
 
@@ -1154,15 +1156,15 @@ In this section, we will use the Security Center Overview screen to review what 
 
 8.  Notice this tile is green which is an indication the resources are in a healthy state. Azure Security Center will flag the tile as red if there are critical recommendations that need to be addressed.
 
-9.  As a last step, let's navigate back to the **Security Center Overview** screen and click on the **Identity & access** tile.
+9.  As a last step, navigate back to the **Security Center Overview** screen and click on the **Identity & access** tile
 
     ![Identity & access tile screenshot.](images/Lab-guide/image163.png "Identity & access tile")
 
-10. As you review the Applications Security Health, notice in this example there's a recommendation to assign a second subscription owner.
+10. As you review the Applications Security Health, notice in this example there's a recommendation to assign a second subscription owner
 
     ![Under Identity & access, there is a recommendation to assign more than one subscription owner.](images/Lab-guide/image164.png "Identity & access recommendations")
 
-11. Go ahead and close this panel and return to the **Security Center Overview** page.
+11. Go ahead and close this panel and return to the **Security Center Overview** page
 
 12. Azure Security Center provides a quick way to see all the recommendations we just saw in a single view. Click on the **Recommendations** tile under the Overview section.
 
@@ -1176,50 +1178,50 @@ In this section, we will use the Security Center Overview screen to review what 
 
 If one of the virtual machines in the resource group were to be stopped (deallocated), that's a condition you would want to be notified of. In this section, we will set up an activity log alert to detect this condition.
 
-1.  Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*monitor*", and selecting **Monitor**.
+1.  Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*monitor*", and selecting **Monitor**
 
     ![The previously mentioned selections are made in the Azure Portal.](images/Lab-guide/image66.png "Azure Portal")
 
-1.  Select **Alerts** under **SHARED SERVICES**, followed by **New Alert Rule**.
+2.  Select **Alerts** under **SHARED SERVICES**, followed by **New Alert Rule**
 
     ![Under Shared services, Alerts and then New Alert Rule are highlighted.](images/Lab-guide/image167.png "New Alert Rule")
 
 
-1.  Under **Define alert condition**, click **+ Select target**.
+3.  Under **Define alert condition**, click on **+ Select target**
 
     ![+ Select Target is highlighted on the blade defining a new Azure alert.](images/Lab-guide/image167b.png "Select target screenshot")
 
-1.  In the 'Select a resource' blade, open the **Filter by resource type** drop-down and select **Virtual machines**. The UI will show each virtual machine in your subscription, grouped into resource groups. Click on the **HOLRG** resource group to select all the virtual machines in that resource group as the target resources monitored by this alert rule. Verify this selection in the 'Selection preview', then click **Done**.
+4.  In the 'Select a resource' blade, open the **Filter by resource type** drop-down and select **Virtual machines**. The UI will show each virtual machine in your subscription, grouped into resource groups. Click on the **HOLRG** resource group to select all the virtual machines in that resource group as the target resources monitored by this alert rule. Verify this selection in the 'Selection preview', then click **Done**.
 
     ![Screenshot showing the 'select a resource' blade, with selections matching the preceeding text.](images/Lab-guide/image167c.png "'Select a resource' screenshot")
 
-1.  Under **Define alert condition**, click **+ Add criteria**.
+5.  Under **Define alert condition**, select **+ Add criteria**
 
     ![+ Add Criteria is highlighted on the blade defining a new Azure alert.](images/Lab-guide/image167d.png "Add criteria screenshot")
 
-1.  In the 'Configure signal logic' blade, open the **Monitor service** drop-down and select **Activity Log - Administrative**. In the search field, enter **deallocate**. Click on **Deallocate Virtual Machine (virtualMachines)**.
+6.  In the 'Configure signal logic' blade, open the **Monitor service** drop-down and select **Activity Log - Administrative**. In the search field, enter **deallocate**. Click on **Deallocate Virtual Machine (virtualMachines)**.
 
     ![Screenshot showing the 'Configure signal logic' blade, with selections matching the preceeding text.](images/Lab-guide/image167e.png "'Configure signal logic' screenshot")
 
-1.  If you have recently stopped the virtual machines, you will see a history of those events, otherwise the chart will show 'No data to display'. Leave the settings at their default values, and click **Done**.
+7.  If you have recently stopped the virtual machines, you will see a history of those events, otherwise the chart will show 'No data to display'. Leave the settings at their default values, and click **Done**.
 
     ![Screenshot showing the 'Configure signal logic' blade, showing a chart of past 'Deallocate Virtual Machine' events. At the bottom of the screenshot, the 'Done' button is highlighted.](images/Lab-guide/image167f.png "'Configure signal logic' screenshot")
 
-1.  Under **Define alert details**, fill in as follows:
+8.  Under **Define alert details**, fill in as follows:
     - Alert rule name: **Alert on VM deallocate**
-    - Description: **Raise an alert any time any VM in the HOLRG resource group is stop-deallocated.**
+    - Description: **Raise an alert any time any VM in the HOLRG resource group is stop-deallocated**
     - Save alert to resource group: **HOLRG**
     - Enable rule upon creation: **Yes**
 
     ![Screenshot showing the 'Define alert details' settings filled in as described in the preceeding text.](images/Lab-guide/image167g.png "'Define alert details' screenshot")
 
-1.  Under **Define action group**, click **+ New action group**.
+9.  Under **Define action group**, select **+ New action group**
 
     ![+ New action group is highlighted on the blade defining a new Azure alert.](images/Lab-guide/image167h.png "New action group screenshot")
 
     NOTE: Action groups define what action is taken when an alert is fired. They are defined separately from the alert rule, so that the same action group can be re-used across multiple alerts.
 
-1.  Fill in the first section of the **Add action group** blade as follows:
+10.  Fill in the first section of the **Add action group** blade as follows:
     - Action group name: **Mobile app push notifications action group**
     - Short name: **Mobile Push**
     - Subscription: **Choose your subscription**
@@ -1227,15 +1229,15 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
    ![Screenshot showing the first section of the 'Add action group' blade filled in as described in the preceeding text.](images/Lab-guide/image167i.png "Add action group screenshot")
 
-1.  In the table under **Actions**, under **Action name** enter **Notify mobile app**. Open the drop down under **Action Type** and select **Email/SMS/Push/Voice**.
+11.  In the table under **Actions**, under **Action name** enter **Notify mobile app**. Open the drop down under **Action Type** and select **Email/SMS/Push/Voice**.
 
    ![Screenshot showing the first line of the 'Actions' table, filled in as described in the preceeding text.](images/Lab-guide/image167j.png "Actions table screenshot")
 
-1.  The **Email/SMS/Push/Voice** blade should open automatically (if it does not, click **Edit details**). Enable the checkbox for **Azure app Push Notifications**, and fill in your Azure user ID, then click **OK**.
+12.  The **Email/SMS/Push/Voice** blade should open automatically (if it does not, click on **Edit details**). Enable the checkbox for **Azure app Push Notifications**, and fill in your Azure user ID, then select **OK**.
 
    ![Screenshot showing the 'Email/SMS/Push/Voice' blade, filled in as described in the preceeding text.](images/Lab-guide/image167k.png "'Email/SMS/Push/Voice' blade screenshot")
 
-1.  All alert settings are now complete. Click **OK** to close the 'Add action group' blade, then click **Create alert rule** to close the **Create rule** blade. You will see a notification once the alert has been created.
+13.  All alert settings are now complete. Select **OK** to close the 'Add action group' blade, then click on **Create alert rule** to close the **Create rule** blade. You will see a notification once the alert has been created.
 
     ![Screenshots of the notification of the successfully created alert rule.](images/Lab-guide/image171.png "Successfully created alert rule message")
 
@@ -1247,66 +1249,66 @@ In this section, you will take your monitoring solution mobile by installing and
 
 1.  Open the **AppStore** or **Google Play** on your mobile device. Locate the search box and type **Microsoft Azure,** and press enter.
 
-2.  When you locate the Microsoft Azure application, install it to your device.
+2.  When you locate the Microsoft Azure application, install it to your device
 
     ![Screenshot of the Microsoft Azure Application Open screen that displays after successfully downloading the application.](images/Lab-guide/image172.png "Azure Application Open screen")
 
-3.  Once the application has been installed, you will need to allow the application to send you notifications.
+3.  Once the application has been installed, you will need to allow the application to send you notifications
 
-4.  Next, touch the Sign In Button.
+4.  Next, touch the Sign In Button
 
     ![Screenshot of the Sign in screen.](images/Lab-guide/image173.png "Sign in screen")
 
-5.  Once the login page loads, enter your Azure Credentials.
+5.  Once the login page loads, enter your Azure Credentials
 
-6.  Once you are logged into the app, navigate to the Notifications menu to see there are currently no notifications.
+6.  Once you are logged into the app, navigate to the Notifications menu to see there are currently no notifications
 
     ![Notifications screen screenshot.](images/Lab-guide/image174.png "Notifications screen")
 
-7.  Putting the phone aside for a moment, in your desktop web browser, navigate to the **Virtual Machines** list in the Azure portal.
+7.  Putting the phone aside for a moment, in your desktop web browser, navigate to the **Virtual Machines** list in the Azure portal
 
 8.  Click on **checkbox next to WEBVM1**, then click **Stop**, followed by **Yes** at the confirmation prompt. This will stop (deallocate) this virtual machine, which should trigger our alert to notifiy the Azure mobile application.
 
     ![WEBVM1 is selected from the virtual machies list, and the 'stop' button is highlighted.](images/Lab-guide/image175.png "Stop WEBVM1")
 
-11. In a few moments, you should receive an alert through the Azure mobile app that the virtual machine was stopped (deallocated).
+9. In a few moments, you should receive an alert through the Azure mobile app that the virtual machine was stopped (deallocated)
 
 ### Task 5: Application Insights
 
 Understanding what is happening within an application can be very challenging, but with the Application Insights configured for CloudShop, there is great telemetry being fed to the Azure Portal. Here, you will investigate that data regarding how the CloudShop is performing.
 
-1.  Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*monitor*", and selecting **Monitor**.
+1.  Open the **Azure portal** and navigate to Azure Monitor by clicking on **All services**, searching for "*monitor*", and selecting **Monitor**
 
     ![The previously mentioned selections are made in the Azure portal.](images/Lab-guide/image66.png "Azure portal")
 
-2.  Click on the **Application Insights** tile, then click **HOLCloudShop**.
+2.  Click on the **Application Insights** tile, then select **HOLCloudShop**
 
     ![Application Insights (1) is selected in the Overview blade, and under Name, HOLCloudShop (2) is selected.](images/Lab-guide/image177.png "Selecting Application Insights from Azure Monitor")
 
-1.  From the Application Insights blade, click **Pin to Dashboard**.
+3.  From the Application Insights blade, click on **Pin to Dashboard**
 
     ![The Pin to dashboard icon is selected from the Overview blade.](images/Lab-guide/image178.png "Pin to dashboard icon")
 
-2.  Under the **INVESTIGATE** section, click the **Performance** item.
+4.  Under the **INVESTIGATE** section, click the **Performance** item
 
     ![Under Investigate, Performance (preview) is selected.](images/Lab-guide/image179.png "Investigate section")
 
-3.  The **Performance** feature of Application Insights allows us to get rich performance monitoring and easy to consume dashboards.
+5.  The **Performance** feature of Application Insights allows us to get rich performance monitoring and easy to consume dashboards
 
 
-4.  This dashboard gives near real-time insight into the performance of your application.
-	In the screenshot below, you can see this application appears to have a performance issue with the Home/Index page. It appears to be taking 20.5 seconds on average to load. NOTE: Your numbers may not match. By clicking on the GET Home/Index, you will see the other sections of the dashboard will filter to performance data focused on that page.
+6.  This dashboard gives near real-time insight into the performance of your application. In the screenshot below, you can see this application appears to have a performance issue with the Home/Index page. It appears to be taking 20.5 seconds on average to load. 
+
+NOTE: Your numbers may not match. By clicking on the GET Home/Index, you will see the other sections of the dashboard will filter to performance data focused on that page.
 
     ![Under Operation Name, Get Home / Index is selected.](images/Lab-guide/image181.png "Operation Name section")
 
-5.  Feel free to experiment with this dashboard to understand the performance considerations of your application.
+7.  Feel free to experiment with this dashboard to understand the performance considerations of your application
 
-
-6.  Pin the 'Operation times' chart to to My Dashboard by clicking on the pin in the top right of the chart.
+8.  Pin the 'Operation times' chart to to My Dashboard by clicking on the pin in the top right of the chart
 
     ![Screenshot of the Pin icon.](images/Lab-guide/image183.png "Pin icon")
 
-7.  At this point, navigate back to **My Dashboard** and click **Edit Dashboard,** and arrange the many tiles you have added to give yourself an all up view of the environment you have built. Feel free to open the various solutions, find interesting data and Pin it to the Dashboard.
+9.  At this point, navigate back to **My Dashboard** and click **Edit Dashboard,** and arrange the many tiles you have added to give yourself an all up view of the environment you have built. Feel free to open the various solutions, find interesting data and Pin it to the Dashboard.
 
     ![Screenshot of My deashboard.](images/Lab-guide/image184.png "My deashboard")
 
@@ -1322,5 +1324,6 @@ Duration: 10 mins
 
 In this exercise, attendees will de-provision any Azure resources that were created in support of the lab.
 
-1.  Delete the **HOLRG, HOLInsights**, and **OPSLABRG** resource groups.
+1.  Delete the **HOLRG, HOLInsights**, and **OPSLABRG** resource groups
 
+You should follow all steps provided *after* attending the Hands-on lab.
