@@ -126,7 +126,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 2.  Click **+Create a resource,** and type **Automation** in the search box. Choose **Automation** from the results.\
     ![Fields in the Everything blade are set to the previously defined settings.](images/Lab-guide/image21.png "Everything blade")
 
-3.  Click **Create** on the Automation blade. This will display the **Add Automation Account** blade.
+3.  Select **Create** on the Automation blade. This will display the **Add Automation Account** blade.
 
 4.  On the **Add Automation Account** blade, specify the following information:
 
@@ -140,17 +140,17 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![Fields in the Add Automation Account blade are set to the previously defined settings.](images/Lab-guide/image22.png "Add Automation Account blade")
 
-5.  Click the **Pin to Dashboard,** then click **Create**.
+5.  Click the **Pin to Dashboard,** then select **Create**
 
     ![The Create button displays under the selected Pin to dashboard checkbox.](images/Lab-guide/image23.png "Pin to dashboard checkbox")
 
 ### Task 2: Add an Azure Automation credential
 
-1.  The CloudShopSQL DSC configuration requires a credential object to access the local administrator account on the virtual machine. Within the Azure Automation DSC configuration click **Credentials** in the **SHARED RESOURCES** section.
+1.  The CloudShopSQL DSC configuration requires a credential object to access the local administrator account on the virtual machine. Within the Azure Automation DSC configuration select **Credentials** in the **SHARED RESOURCES** section.
 
     ![Under Shared Resources, Credentials is selected.](images/Lab-guide/image24.png "Shared Resources section")
 
-2.  Click the **Add a credential** button.
+2.  Select the **Add a credential** button
 
     ![Screenshot of the Add a credential button.](images/Lab-guide/image25.png "Add a credential button")
 
@@ -168,19 +168,19 @@ Important: It is important to use the exact name for the credential, because one
 
 ### Task 3: Upload DSC configurations into automation account
 
-1.  Click **Resource groups \> HOLRG \> Automation-Acct** and click **DSC Configurations**.
+1.  Select **Resource groups \> HOLRG \> Automation-Acct** and click **DSC Configurations**
 
 > ![Screenshot of the Automation Account blade.](images/Lab-guide/image27.png "Automation Account blade")
 
-2.  Click on the **+ Add a configuration** button.
+2.  Select the **+ Add a configuration** button
 
     ![In the Automation Account blade, the Add a configuration button is selected.](images/Lab-guide/image28.png "Automation Account blade")
 
-3.  On the **Import** pane, upload both **C:\\HOL\\CloudShopSQL.ps1** and **C:\\HOL\\CloudShopWeb.ps1** files. You'll need to click on **+ Add a configuration** a second time to upload the second file.
+3.  On the **Import** pane, upload both **C:\\HOL\\CloudShopSQL.ps1** and **C:\\HOL\\CloudShopWeb.ps1** files. You'll need to select **+ Add a configuration** a second time to upload the second file.
 
     ![Screenshot of the Import blade with fields set to the previously defined settings.](images/Lab-guide/image29.png "Import blade")
 
-4.  After importing the .ps1 files, click the **CloudShopSQL** DSC Configuration. Then, select **Compile** on the toolbar (*click **Yes** on the overwrite prompt*). Do the same for **CloudShopWeb.**
+4.  After importing the .ps1 files, select the **CloudShopSQL** DSC Configuration. Then, select **Compile** on the toolbar (*click **Yes** on the overwrite prompt*). Do the same for **CloudShopWeb.**
 
     ![The name field is set to CloudShopSQL in the Automation Account blade.](images/Lab-guide/image30.png "Automation Account blade")
 
@@ -188,7 +188,7 @@ Important: It is important to use the exact name for the credential, because one
 
     ![In the Compile DSC Configuration box, the Yes button is selected.](images/Lab-guide/image32.png "Compile DSC Configuration box")
 
-5.  Make sure to review the DSC configurations to ensure they have completed the compile prior to moving on to the next step.
+5.  Make sure to review the DSC configurations to ensure they have completed the compile prior to moving on to the next step
 
     ![Screenshot of the Configuration blade.](images/Lab-guide/image33.png "Configuration blade")
 
@@ -206,9 +206,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 ### Task 1: Template deployment
 
-1.  In the portal, open your Azure Automation Account created earlier.
+1.  In the portal, open your Azure Automation Account created earlier
 
-2.  Under **Account Settings,** locate the and click **Keys.**
+2.  Under **Account Settings,** locate the and select **Keys**
 
     ![Under Account Settings, Keys is selected.](images/Lab-guide/image34.png "Account Settings section")
 
@@ -218,9 +218,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     ![The primary key and URL displays in Notepad.](images/Lab-guide/image36.png "Notepad")
 
-4.  In the Azure Portal, click the **+Create a resource** button. In the Search box, type **Template Deployment.**
+4.  In the Azure Portal, select the **+Create a resource** button. In the Search box, type **Template Deployment.**
 
-5.  Select **Template Deployment and** click **Create** on the following screen.
+5.  Select **Template Deployment and** click **Create** on the following screen
 
     ![Template deployment is circled in the Everything blade.](images/Lab-guide/image37.png "Everything blade")
 
@@ -230,19 +230,19 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 ![In the Custom deployment blade, Build your own template in the editor is selected.](images/Lab-guide/image38.png "Custom deployment blade")
 
-7.  Click **Load File.**
+7.  Select **Load File**
 
     ![The Load file button is selected in teh Edit template blade.](images/Lab-guide/image39.png "Edit template blade")
 
-8.  In the Choose File to Upload dialog, navigate to the **C:\\HOL** folder, and locate the **OMSHacakthon-azuredeploy.json** file.
+8.  In the Choose File to Upload dialog, navigate to the **C:\\HOL** folder, and locate the **OMSHacakthon-azuredeploy.json** file
 
     ![Screenshot of the Choose File to Upload dialog box with the previously mentioned path expanded.](images/Lab-guide/image40.png "Choose File to Upload dialog box")
 
-9.  The JSON file will now be in the text window and the Parameters, Variables, and Resources should load in the Window. Click **Save**.
+9.  The JSON file will now be in the text window and the Parameters, Variables, and Resources should load in the Window. Select **Save**.
 
     ![Screenshot of the Edit template blade with JSON code.](images/Lab-guide/image41.png "Edit template blade")
 
-10. Once saved, the window will change to a screen which is asking for inputs. Use the following information to complete.
+10. Once saved, the window will change to a screen which is asking for inputs. Use the following information to complete:
 
 NOTE: In your student files C:\\HOL\\parameters.txt there is a parameters file that you can use to quickly copy and paste into the portal.
 
@@ -298,15 +298,16 @@ y.  HOL VM2Name: **WEBVM2**
 
 z.  HOL VM2 Admin Name: **demouser**
 
-a.  HOL VM2 Admin Password: **demo\@pass123**
+aa.  HOL VM2 Admin Password: **demo\@pass123**
 
-b.  HOL VM2 Windows OS Version: **2016-Datacenter**
+bb.  HOL VM2 Windows OS Version: **2016-Datacenter**
 
-c.  Web AV Set Name: **webAVSet**
+cc.  Web AV Set Name: **webAVSet**
 
 <!-- -->
 
-11. Once completed, click the **I agree to the terms and conditions stated above,** and the **Pin to Dashboard** followed by **Purchase.**\
+11. Once completed, choose the **I agree to the terms and conditions stated above,** and the **Pin to Dashboard** followed by **Purchase**
+
     ![The Pin to dashboard checkbox and Purchase button are selected in the Terms and Conditions section.](images/Lab-guide/image42.png "Terms and Conditions section")
 
 12. A Deployment tile will appear on your **My Dashboard**. This deployment should take about 25-30 minutes. The servers will take some time to check in with Azure Automation and configure the CloudShop application.
@@ -315,7 +316,7 @@ c.  Web AV Set Name: **webAVSet**
 
 NOTE: Wait for the Deployment to successfully complete prior to moving on to the next steps.
 
-13. Now that the servers are built, and the deployment is complete, let's verify the servers are up and running properly.
+13. Now that the servers are built, and the deployment is complete, let's verify the servers are up and running properly...
 
 14. In the Azure Portal, open the **HOLRG,** and locate the Public IP Address **hackathonPublicIP**. Click on the blade to open.
 
@@ -331,7 +332,7 @@ NOTE: Wait for the Deployment to successfully complete prior to moving on to the
 
     ![Screenshot of the Cloud Shop webpage with a callout pointing to the WEBVM2 virtual machine name.](images/Lab-guide/image46.png "Cloud Shop webpage")
 
-18. By pressing **F5** on your keyboard, you can refresh the website until you see that **WEBVM1** is also serving webpages.
+18. By pressing **F5** on your keyboard, you can refresh the website until you see that **WEBVM1** is also serving webpages
 
     ![Screenshot of the Cloud Shop webpage with a callout pointing to the WEBVM1 virtual machine name.](images/Lab-guide/image47.png "Cloud Shop webpage")
 
@@ -343,29 +344,29 @@ Now that the deployment and the application is up and running, the next step is 
 
     ![In the Resource group blade, under Name, loadBalancer1 is selected.](images/Lab-guide/image48.png "Resource group blade")
 
-2.  On the **loadBalancer1** blade, locate **Inbound NAT rules,** and click in **Settings**.
+2.  On the **loadBalancer1** blade, locate **Inbound NAT rules,** and select **Settings**
 
     ![In the LoadBalancer 1 blade, under Settings, Inbound NAT rules is selected.](images/Lab-guide/image49.png "LoadBalancer 1 blade")
 
 3.  Click **+Add,** and complete the blade using the following information:
 
-    i.  Name: **rdp-webvm1**
+    a.  Name: **rdp-webvm1**
 
     <!-- -->
 
-    a.  Frontend IP Address: **accept default**
+    b.  Frontend IP Address: **accept default**
 
-    b.  Service: **RDP**
+    c.  Service: **RDP**
 
-    c.  Port: **3389**
+    d.  Port: **3389**
 
-    d.  Associated to: **webavset**
+    e.  Associated to: **webavset**
 
-    e.  Target: **Choose a virtual machine: WEBVM1**
+    f.  Target: **Choose a virtual machine: WEBVM1**
 
-    f.  Network IP configuration: **ipconfig1 (10.0.0.4)**
+    g.  Network IP configuration: **ipconfig1 (10.0.0.4)**
 
-    g.  Port mapping: **Default**
+    h.  Port mapping: **Default**
 
         ![Add inbound NAT rule blade fields are set to the previously defined settings.](images/Lab-guide/image50.png "Add inbound NAT rule blade")
 
@@ -377,23 +378,23 @@ Now that the deployment and the application is up and running, the next step is 
 
 5.  Click **+Add,** and complete the blade using the following information:
 
-    h.  Name: **rdp-webvm2**
+    a.  Name: **rdp-webvm2**
 
-    i.  Frontend IP Address: **accept default**
+    b.  Frontend IP Address: **accept default**
 
-    j.  Service: **RDP**
+    c.  Service: **RDP**
 
-    k.  Port: **3390**
+    d.  Port: **3390**
 
-    l.  Target **Choose a virtual machine: WEBVM2**
+    e.  Target **Choose a virtual machine: WEBVM2**
 
-    m.  Network IP configuration: **ipconfig1 (10.0.0.5)**
+    f.  Network IP configuration: **ipconfig1 (10.0.0.5)**
 
-    n.  Port mapping: **Custom**
+    g.  Port mapping: **Custom**
 
-    o.  Floating IP: **Disabled**
+    h.  Floating IP: **Disabled**
 
-    p.  Target Port: **3389**
+    i.  Target Port: **3389**
 
         ![Add inbound NAT rule blade fields are set to the previously defined settings.](images/Lab-guide/image53.png "Add inbound NAT rule blade")
 
@@ -403,53 +404,53 @@ Now that the deployment and the application is up and running, the next step is 
 
     ![Screenshot of the Saved load balancer inbound NAT rule message.](images/Lab-guide/image54.png "Saved load balancer inbound NAT rule message")
 
-7.  To verify the new NAT Rules are working, move back to the **HOLRG** in the Azure portal. Click **WEBVM1,** and the **Connect** Link should now be available. Click **Connect**.
+7.  To verify the new NAT Rules are working, move back to the **HOLRG** in the Azure portal. Select **WEBVM1,** and the **Connect** Link should now be available. Select **Connect**.
 
     ![The Connect button is selected in the Virtual machine blade.](images/Lab-guide/image55.png "Virtual machine blade")
 
-8.  On the 'Connect to virtual machine' blade, check the **RDP** tab is selected and click **Download RDP File**.
+8.  On the 'Connect to virtual machine' blade, check the **RDP** tab is selected and choose **Download RDP File**
 
     ![The Download RDP File button is highlighted on the RDP tab of the Connect to virtual machine blade](images/Lab-guide/image55b.png "Connect to virtual machine blade")
   
-8.  Click **Open** when the RDP file downloads.
+8.  Select **Open** when the RDP file downloads
 
     ![The Open button is selected in the Open or Save message.](images/Lab-guide/image56.png "Open or Save option")
 
-9.  You will get a warning about the publisher of the RDP file being unknown. Click **Don't ask me again for connections to this computer** and click **Connect.**
+9.  You will get a warning about the publisher of the RDP file being unknown. Select **Don't ask me again for connections to this computer** and click **Connect.**
 
     ![In the Remote Desktop Connection dialog box, the Don\'t ask me again checkbox and the Connect button are both selected.](images/Lab-guide/image57.png "Remote Desktop Connection dialog box")
 
-10. When prompted by Windows Security, enter your credentials.
+10. When prompted by Windows Security, enter your credentials:
 
     a.  User Name: **demouser**
 
-    a.  Password: **demo\@pass123**
+    b.  Password: **demo\@pass123**
 
         ![Screenshot of the Windows Security prompt.](images/Lab-guide/image58.png "Windows Security prompt")
 
-11. A warning will appear stating: **The identity of the remote computer cannot be verified. Do you want to connect anyway?** Click the checkbox for the disclaimer: **Don't ask me again for connection to this computer.** Then, click **Yes**.
+11. A warning will appear stating: **The identity of the remote computer cannot be verified. Do you want to connect anyway?** Select the checkbox for the disclaimer: **Don't ask me again for connection to this computer.** Then, select **Yes**.
 
     ![The Remote Desktop Connection warning dialog box displays with the Don\'t ask me again checkbox and the Yes button selected.](images/Lab-guide/image59.png "Remote Desktop Connection warning dialog box ")
 
 NOTE: When connecting to machines during this lab for the first time, you may encounter the same warnings etc. Follow these same steps to no longer receive those warnings as they do not apply to our setup.
 
-12. When logging on for the first time, you will see a prompt on the right asking about network discovery. Click **No**.
+12. When logging on for the first time, you will see a prompt on the right asking about network discovery. Select **No**.
 
 	![The No button is selected in the Networks prompt.](images/Setup/image10.png "Networks prompt")
 
-13. Notice the Server Manager opens by default. On the left, click **Local Server**.
+13. Notice the Server Manager opens by default. On the left, select **Local Server**
 
 ![Screenshot of the Local Server option.](images/Setup/image11.png "Local Server option")
 
-14. On the right side of the pane, click **On** by **IE Enhanced Security Configuration**.
+14. On the right side of the pane, select **On** by **IE Enhanced Security Configuration**
 
 ![The IE Enhanced Security Configuration is set to On.](images/Setup/image12.png "IE Enhanced Security Configuration setting")
 
-15. Change to **Off** for Administrators and click **OK**.
+15. Change to **Off** for Administrators and select **OK**
 
 ![Screenshot of the Internet Explorer Enhanced Security Configuration dialog box.](images/Setup/image13.png "Internet Explorer Enhanced Security Configuration dialog box")
 
-16. In the lower left corner, click on the **Windows** button to open the **Start Screen**. Then, click **Internet Explorer** to open it. On first use, you will be prompted about security settings. Accept the defaults by clicking **OK**.
+16. In the lower left corner, select the **Windows** button to open the **Start Screen**. Then, **Internet Explorer** to open it. On first use, you will be prompted about security settings. Accept the defaults by selecting **OK**.
 
 ![Screenshot of the Internet Explorer 11 security settings dialog box with Use recommended settings selected.](images/Setup/image14.png "Internet Explorer 11 security settings dialog box")
 
@@ -459,35 +460,33 @@ NOTE: When connecting to machines during this lab for the first time, you may en
 
 In this task, you will configure the VMs to capture diagnostic data in an Azure Storage Account. Later you will connect this account to the Azure Security Center and Log Analytics.
 
-1.  In the Azure Portal navigate to the **HOLRG** Resource Group and locate **WEBVM1**. Click the name to open the blade.
+1.  In the Azure Portal navigate to the **HOLRG** Resource Group and locate **WEBVM1**. Select the name to open the blade.
 
-2.  On the **WEBVM1,** locate the **Monitoring** section, and click on **Diagnostic Settings**.
+2.  On the **WEBVM1,** locate the **Monitoring** section, and select **Diagnostic Settings**
 
 > ![On the WEBVM1 blade under Monitoring, Diagnostic settings is selected.](images/Lab-guide/image60.png "WEBVM1 blade")
 
-3.  Click the **Enable guest-level monitoring** button. This will load more information to choose from. Click the Storage Account Configure Required Settings, and then, choose the Storage Account you just created.
+3.  Select the **Enable guest-level monitoring** button. This will load more information to choose from. Select the Storage Account Configure Required Settings, and then, choose the Storage Account you just created.
 
     ![On the Overview tab, the Enable guest-level monitoring button is selected.](images/Lab-guide/image61.png "Overview tab")
 
     ![Screenshot of the Updating diagnostics settings notification.](images/Lab-guide/image62.png "Updating diagnostics settings notification")
 
-4.  Select the Configure performance counters.
+4.  Select the Configure performance counters
 
     ![Under Performance counters, the Configure performance counters link is selected.](images/Lab-guide/image63.png "Performance counters section")
 
-5.  Next check the **ASP.NET box,** and click **Save**.
+5.  Next check the **ASP.NET box,** and select **Save**
 
     ![On the Performance counters tab, the ASP.NET checkbox is called out.](images/Lab-guide/image64.png "Performance counters tab")
 
-6.  This will submit a deployment for **WEBVM1**.
+6.  This will submit a deployment for **WEBVM1**
 
     ![Screenshot of the Updating diagnostics settings notice.](images/Lab-guide/image62.png "Updating diagnostics settings notice")
 
-7.  Complete the same steps for **WEBVM2**.
+7.  Complete the same steps for **WEBVM2**
 
-
-
-8.  Next, using the same steps, configure **SQLVM** for Diagnostics as well, Select the following metrics for this SQL Server, and click **Save**.
+8.  Next, using the same steps, configure **SQLVM** for Diagnostics as well, Select the following metrics for this SQL Server, and select **Save**.
 
     a.  SQL Metrics
 
@@ -509,15 +508,15 @@ The next step is to provision the Azure security and Azure management components
 
 ### Task 1: Provision Log Analytics through Azure Monitor
 
-1.  Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*monitor*", and selecting **Monitor**.
+1.  Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*monitor*", and selecting **Monitor**
 
 > ![Screenshot of the Azure portal with the previous selections displaying.](images/Lab-guide/image66.png "Azure portal")
 
-2.  In the Azure Monitor blade, click **Log Analytics**.
+2.  In the Azure Monitor blade, select **Log Analytics**
 
 > ![In the Azure Monitor blade, Log Analytics is highlighted.](images/Lab-guide/image67.png "Log Analytics selection")
 
-3.  Complete the OMS Workspace blade using the following information. Then, click **Pin to Dashboard** and click **OK**:
+3.  Complete the OMS Workspace blade using the following information. Then, select **Pin to Dashboard** then **OK**:
 
     a.  OMS Workspace: **Unique name**
 
@@ -527,8 +526,7 @@ The next step is to provision the Azure security and Azure management components
 
     d.  Location: **Closest to your deployment**
 
-    e.  Pricing Tier: **Select Per Node (OMS)\
-        **
+    e.  Pricing Tier: **Select Per Node (OMS)**
 
         ![Fields in the OMS Workspace and Pricing Tier blades are set to the prevoiusly defined settings.](images/Lab-guide/image68.png "OMS Workspace and Pricing Tier blades")
 
@@ -536,7 +534,7 @@ The next step is to provision the Azure security and Azure management components
 
     ![Screenshot of the Log Analytics resource.](images/Lab-guide/image69.png "Log Analytics resource")
 
-5.  Once it loads in the Azure Portal, move the slider bar down, and click **Virtual Machines** which is found in the **Workspace Data Sources** section.
+5.  Once it loads in the Azure Portal, move the slider bar down, and select **Virtual Machines** which is found in the **Workspace Data Sources** section
 
     ![Under Workspace Data Sources, Virtual machines is selected.](images/Lab-guide/image70.png "Workspace Data Sources section")
 
@@ -544,19 +542,19 @@ The next step is to provision the Azure security and Azure management components
 
     ![In the list of virtual machines, SQLVM, WEBVM1, and WEBVM2 are called out.](images/Lab-guide/image71.png "Virtual machines list")
 
-7.  Click the **SQLVM** to load a blade to the right. Then, click **Connect** to add it to this Log Analytics Workspace.
+7.  Select the **SQLVM** to load a blade to the right. Then, click on **Connect** to add it to this Log Analytics Workspace.
 
     ![The Connect button is selected in the SQLVM blade.](images/Lab-guide/image72.png "SQLVM blade")
 
-8.  Follow the same steps for the **WEBVM1** & **WEBVM2**.
+8.  Follow the same steps for the **WEBVM1** & **WEBVM2**
 
-9.  The portal should update to show that they are now a part of "This workspace" once they have all been added.
+9.  The portal should update to show that they are now a part of "This workspace" once they have all been added
 
     ![SQLVM, WEBVM1, and WEBVM2 display in the portal.](images/Lab-guide/image73.png "Portal")
 
 ### Task 2: Explore Security Center
 
-1.  Open the Azure portal and navigate to the **Security Center** menu option (**All Services Security Center**).
+1.  Open the Azure portal and navigate to the **Security Center** menu option (**All Services Security Center**)
 
     ![Within the Azure Portal, Security Center is selected.](images/Lab-guide/image74.png "Azure Portal")
 
@@ -564,14 +562,14 @@ The next step is to provision the Azure security and Azure management components
 
     ![Screenshot of the Security Center - Overview screen.](images/Lab-guide/image75.png "Security Center - Overview screen")
 
-3.  Click **Onboard to Advanced Security**.
+3.  Select **Onboard to Advanced Security**
 
-4.  Select the subscription you would like to upgrade by clicking on the subscription name.
+4.  Select the subscription you would like to upgrade by clicking on the subscription name
 
 > ![Screenshot of the Enable advanced security for subscriptions page with a subscription selected.](images/Lab-guide/image76.png "Enable advanced security for subscriptions page")
 
-5.  Select the **Standard** pricing tier and click **Save**.\
-    \
+5.  Select the **Standard** pricing tier and click on **Save**
+
     ![Screenshot of the Pricing blade with the Standard option and the Save button selected.](images/Lab-guide/image77.png "Pricing blade")
 
 6.  Close the panel and navigate back to the **Security Center Overview** screen. Click on **Security policy** under the **General** section. This is where you will enable data collection.
@@ -590,18 +588,19 @@ The next step is to provision the Azure security and Azure management components
 
 In this section, you will add Service Map to Log Analytics.
 
-1.  From the Azure portal, click the **+Create a resource** Link followed by **Management Tools** and **See all**.\
-    ![Create a resource > Management Tools > See All click path screenshot.](images/Lab-guide/image81.png "Create a resource > Management Tools > See all")\
-    
+1.  From the Azure portal, click the **+Create a resource** Link followed by **Management Tools** and **See all**
+
+    ![Create a resource > Management Tools > See All click path screenshot.](images/Lab-guide/image81.png "Create a resource > Management Tools > See all")
+        
 2.  Note there are many solutions available, and more are added frequently. Browse the solutions to gain familiarity with the options.
 
     ![Screenshot of the Dynatrace homepage.](images/Lab-guide/image83.png "Dynatrace homepage")
 
-3.  Locate the **Service Map** solution and select it. If you don't see it on the page, use the *Search Monitoring + Management* field at the top of the screen to search for **Service Map**. On the Details page, you can read about the solution. When ready, click **Create.**
+3.  Locate the **Service Map** solution and select it. If you don't see it on the page, use the *Search Monitoring + Management* field at the top of the screen to search for **Service Map**. On the Details page, you can read about the solution. When ready, select **Create.**
 
     ![In the Monitoring and Management blade, in the search results, Service Map is selected.](images/Lab-guide/image84.png "Monitoring and Management blade")
 
-4.  Select the OMS Workspace you created and check the **Pin to dashboard** before selecting **Create.**
+4.  Select the OMS Workspace you created and check the **Pin to dashboard** before selecting **Create**
 
     ![Screenshot of the Service Map blade.](images/Lab-guide/image85.png "Service Map blade")
 
@@ -611,15 +610,13 @@ To configure the Service Map functionality, the Microsoft Dependency Agent needs
 This can be installed as a VM extension, however this VM extension is not currently available via the Azure portal.
 For this lab, we'll install the VM extension using the Azure CLI.
 
-1.  Open the Azure Cloud Shell by clicking on the 'Cloud Shell' icon.
+1.  Open the Azure Cloud Shell by clicking on the 'Cloud Shell' icon
 
     ![Screenshot of Cloud Shell button](images/Lab-guide/image86.png "Cloud Shell button")
 
-	NOTE: If this is your first time using the Azure Cloud Shell, you will be prompted to choose between a Bash Shell and PowerShell. Choose **Bash Shell**.
-	Also, you will be prompted to create a storage account for use by the Cloud Shell.
+	NOTE: If this is your first time using the Azure Cloud Shell, you will be prompted to choose between a Bash Shell and PowerShell. Choose **Bash Shell**. Also, you will be prompted to create a storage account for use by the Cloud Shell.
 
-1.  The Cloud Shell will open at the bottom of the Azure portal browser window. (If a PowerShell has been selected, change to the **Bash Shell**.)
-    In the Bash Shell window, type the following command:
+2.  The Cloud Shell will open at the bottom of the Azure portal browser window. (If a PowerShell has been selected, change to the **Bash Shell**.) In the Bash Shell window, type the following command:
 
 	```
 	az vm extension set --publisher Microsoft.Azure.Monitoring.DependencyAgent --version 9.1 --name DependencyAgentWindows --vm-name WEBVM1 --resource-group HOLRG
@@ -627,17 +624,17 @@ For this lab, we'll install the VM extension using the Azure CLI.
 
 	This command will take a minute or two to run.
 
-1.  Repeat the above command two more times, replacing the `--vm-name` parameter with **WEBVM2** and then with **SQLVM**.
+3.  Repeat the above command two more times, replacing the `--vm-name` parameter with **WEBVM2** and then with **SQLVM**
 
-7.  In the Azure Portal, navigate to the **All Resources** menu and locate the **Service Map** resource you created earlier. Click on the resource name.
+4.  In the Azure Portal, navigate to the **All Resources** menu and locate the **Service Map** resource you created earlier. Click on the resource name.
 
     ![Screenshot of the All resources blade with ServiceMap selected.](images/Lab-guide/image88.png "All resources blade")
 
-8.  This will bring up the Service Map screen and you'll see that it's already populated with some data. Since we installed the agent on the three Windows virtual machines, the Service Map is showing these virtual machines now reporting data. Click on the **Service Map** tile.
+5.  This will bring up the Service Map screen and you'll see that it's already populated with some data. Since we installed the agent on the three Windows virtual machines, the Service Map is showing these virtual machines now reporting data. Click on the **Service Map** tile.
 
     ![The Summary section displays information for both the Service Map and Solution Resources.](images/Lab-guide/image89.png "Service Map Summary section")
 
-9.  When the Service Map loads, click on **WEBVM1** to see the data that has been analyzed for that virtual machine.
+6.  When the Service Map loads, click on **WEBVM1** to see the data that has been analyzed for that virtual machine.
 
     ![Screenshot of the Service Map for WEBVM1.](images/Lab-guide/image90.png "Service Map")
 
@@ -645,48 +642,48 @@ For this lab, we'll install the VM extension using the Azure CLI.
 
 The Update Management functionality will be configured through your Virtual Machines.
 
-1.  In the **Azure Portal**, browse to **WEBVM1**.
+1.  In the **Azure Portal**, browse to **WEBVM1**
 
-1.  Select **Update management** under **OPERATIONS**.
+2.  Select **Update management** under **OPERATIONS**
 
     ![Under Operations, Update management is selected.](images/Lab-guide/image91.png "Operations section")
 
-1.  Select your **Log Analytics workspace** and **Automation Account** and click **Enable**.
+3.  Select your **Log Analytics workspace** and **Automation Account** and select **Enable**
 
     ![Screenshot of the Update Management window with the Enable button selected.](images/Lab-guide/image92.png "Update Management window")
 
 	NOTE: In some cases, your Log Analytics workspace may not be shown if it is located in a different region or geography. In this case, use the option provided to create a new Log Analytics workspace.
 
-1.  Wait for the deployment to complete. This can take up to 15 minutes.
+4.  Wait for the deployment to complete. This can take up to 15 minutes.
 
     ![Screenshot of the Update Manager being enabled message.](images/Lab-guide/image93.png "Update Manager being enabled message")
 
     Do not navigate away from the Update Management blade until the deployment message reads "The 'Update Management' solution is being deployed on this virtual machine. This can take a few minutes. You can do other work while this is in progress."
 
-1.  While the solution is deploying, navigate to **WEBVM2** and repeat steps 2-4.
+5.  While the solution is deploying, navigate to **WEBVM2** and repeat steps 2-4
 
-1.  While the solution is deploying, navigate to **SQLVM** and repeat steps 2-4.
+6.  While the solution is deploying, navigate to **SQLVM** and repeat steps 2-4
 
-1.  Verify that the solution has been deployed by navigating to **WEBVM1** and clicking on **Update management** under **OPERATIONS**.\
+7.  Verify that the solution has been deployed by navigating to **WEBVM1** and clicking on **Update management** under **OPERATIONS**
 
     ![Under Operations, Update management is selected.](images/Lab-guide/image91.png "Operations section")
 
-1.  The Portal shows the Update Management dashboard for the virtual machine. Here you can see which updates are pending, and the overall update compliance status of the VM.
+8.  The Portal shows the Update Management dashboard for the virtual machine. Here you can see which updates are pending, and the overall update compliance status of the VM.
 
     ![Missing updates shows as zero.](images/Lab-guide/image94.png "Missing updates message")
 
-1.  Click on **Schedule update deployment**. The portal shows the 'New update deployment' blade, where you can choose which updates to deploy (based on classification), which to exclude (based on KnowledgeBase ID), when to deploy, and the duration of the maintenance window (updates not deployed within 20 minutes of the end of this time window are omitted so the VM can reboot.)
+9.  Click on **Schedule update deployment**. The portal shows the 'New update deployment' blade, where you can choose which updates to deploy (based on classification), which to exclude (based on KnowledgeBase ID), when to deploy, and the duration of the maintenance window (updates not deployed within 20 minutes of the end of this time window are omitted so the VM can reboot.)
 
      ![The New Update Deployment blade shows the settings described in the preceeding text.](images/Lab-guide/image186.png "New update deployment")
 
     Review the update settings, but do *not* configure an update deployment (to save time during the lab). Close the New update deployment blade.
 
-1.  Click on **Manage multiple machines**. This brings you to the Update Management view within the Azure Automation portal experience. This gives you an overview of update compliance across all of your VMs.
+10.  Select on **Manage multiple machines**. This brings you to the Update Management view within the Azure Automation portal experience. This gives you an overview of update compliance across all of your VMs.
 
      ![Screenshot of the Log Analytics Update Managemnent experience. The VMs we have created are listed, together with metrics showing the number of updates pending/failed.](images/Lab-guide/image188.png "Update Management experience")
 
 
-1.  Click **New update deployment** brings a similar update deployment blade, except in this case you can configure the update deployment to be either Windows or Linux (previously the OS was inferred from the VM), and select which VMs will be updated (previously the blade applied only to a single VM).
+11.  Select **New update deployment** brings a similar update deployment blade, except in this case you can configure the update deployment to be either Windows or Linux (previously the OS was inferred from the VM), and select which VMs will be updated (previously the blade applied only to a single VM).
 
     ![The New Update Deployment blade shows the settings described in the preceeding text.](images/Lab-guide/image187.png "New update deployment")
 
