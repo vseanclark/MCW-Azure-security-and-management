@@ -63,25 +63,25 @@ Thank you for taking time to support the whiteboard design sessions as a trainer
 
 An amazing trainer:
 
--   Creates a safe environment in which learning can take place.
+-   Creates a safe environment in which learning can take place
 
--   Stimulates the participant's thinking.
+-   Stimulates the participant's thinking
 
--   Involves the participant in the learning process.
+-   Involves the participant in the learning process
 
--   Manages the learning process (on time, on topic, and adjusting to benefit participants).
+-   Manages the learning process (on time, on topic, and adjusting to benefit participants)
 
--   Ensures individual participant accountability.
+-   Ensures individual participant accountability
 
--   Ties it all together for the participant.
+-   Ties it all together for the participant
 
--   Provides insight and experience to the learning process.
+-   Provides insight and experience to the learning process
 
--   Effectively leads the whiteboard design session discussion.
+-   Effectively leads the whiteboard design session discussion
 
--   Monitors quality and appropriateness of participant deliverables.
+-   Monitors quality and appropriateness of participant deliverables
 
--   Effectively leads the feedback process.
+-   Effectively leads the feedback process
 
 ## Whiteboard design session flow 
 
@@ -99,7 +99,7 @@ Outcome: Analyze your customer's needs
 
 **Step 2: Design a proof of concept solution (60 minutes)**
 
-Outcome: Prepare to present a solution for your target customer audience
+Outcome: Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format.
 
 -   Determine your target customer audience
 
@@ -129,13 +129,13 @@ Before conducting your first whiteboard design session:
 
 -   Read the Student guide (including the case study) and Trainer guide
 
--   Become familiar with all key points and activities.
+-   Become familiar with all key points and activities
 
--   Plan the point you want to stress, which questions you want to drive, transitions, and be ready to answer questions.
+-   Plan the point you want to stress, which questions you want to drive, transitions, and be ready to answer questions
 
--   Prior to the whiteboard design session, discuss the case study to pick up more ideas.
+-   Prior to the whiteboard design session, discuss the case study to pick up more ideas
 
--   Make notes for later.
+-   Make notes for later
 
 ## During the whiteboard design session: Tips for an effective whiteboard design session
 
@@ -145,7 +145,7 @@ Before conducting your first whiteboard design session:
 
 When participants are doing activities, you can **look ahead to refresh your memory**.
 
--   **Adjust activity and whiteboard design session pace** as needed to allow time for presenting, feedback, and sharing.
+-   **Adjust activity and whiteboard design session pace** as needed to allow time for presenting, feedback, and sharing
 
 -   **Add examples, points, and stories** from your own experience. Think about stories you can share that help you make your points clearly and effectively.
 
@@ -172,7 +172,7 @@ In this session, the customer is looking for managing and monitoring solutions f
 **Outcome** 
 
 Analyze your customer’s needs.
-Time frame: 15 minutes 
+Timeframe: 15 minutes 
 Directions: With all participants in the session, the facilitator/SME presents an overview of the customer case study along with technical tips. 
 1.  Meet your table participants and trainer 
 2.  Read all of the directions for steps 1–3 in the student guide 
@@ -308,27 +308,27 @@ are being attacked.
     deployment, so all application monitoring must be done without instrumenting
     the code.
 
-1.  They believe Microsoft does their best for securing the Azure network, but
+2.  They believe Microsoft does their best for securing the Azure network, but
     they are very unsure how to detect when hackers are attacking their system.
     How will Microsoft's solution ensure we have visibility into our security
     posture?
 
-1.  SQL Server is used extensively in their application eco-system. Contoso is
+3.  SQL Server is used extensively in their application eco-system. Contoso is
     concerned about proper configuration, and they are worried SQL may not
     perform adequately on VMs in Azure. The system needs to provide feedback on
     proper configurations with the ability to drill down into how the system is
     performing, even down to the query level, showing dependences and their
     ASP.NET applications.
 
-1.  Contoso are concerned about the administrative controls. They would like to
+4.  Contoso are concerned about the administrative controls. They would like to
     ensure that only approved administrators have access to manage virtual
     machines.
 
-1.  Contoso are also concerned about how to control Azure usage without limiting
+5.  Contoso are also concerned about how to control Azure usage without limiting
     agility. They want to ensure governance controls are in place across all their
     subscriptions to prevent usage of un-approved resources.
 
-1.  Contoso would also like to ensure all Azure VMs use best practice disk
+6.  Contoso would also like to ensure all Azure VMs use best practice disk
     encryption, with key management in accordance with Contoso company policies.
 
 ### Infographic for common scenarios
@@ -340,19 +340,15 @@ are being attacked.
 **Outcome** 
 Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format. 
 
-Time frame: 60 minutes
+Timeframe: 60 minutes
 
 **Business needs**
 
-Directions: With all participants at your table, answer the following questions
-and list the answers on a flip chart. 
-1.  Who should you present this solution to? Who is your target customer
-    audience? Who are the decision makers? 
+Directions: With all participants at your table, respond to the following questions on a flip chart. 
+1.  Who should you present this solution to? Who is your target customer audience? Who are the decision makers? 
 2.  What customer business needs do you need to address with your solution?
 
-**Design** Directions: With all participants at your table, respond to the
-following questions on a flip chart.
-
+**Design** Directions: With all participants at your table, respond to the following questions on a flip chart.
 
 *High-level architecture*
 
@@ -364,34 +360,34 @@ following questions on a flip chart.
 
 *Address the following customer requirements*
 
-2.  How can you deliver a single consistent experience for log search, alerting,
+1.  How can you deliver a single consistent experience for log search, alerting,
     analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
 
-1.  What services and approach would you take to address the need to continually
+2.  What services and approach would you take to address the need to continually
     update their infrastructure and configuration of their applications?
 
-1.  How would changes to the configuration be tracked?
+3.  How would changes to the configuration be tracked?
 
-1.  How will virtual machine diagnostics data be stored, tracked and made
+4.  How will virtual machine diagnostics data be stored, tracked and made
     searchable? To demonstrate this capability, Contoso have asked for a
-    demonstration showing how your solution can
+    demonstration showing how your solution can.
     -   Show the percentage availability (time running) of each computer, over
         the past day
     -   Identify the most frequently run processes across all VMs
     -   Chart the number of alerts raised per day, broken out by severity
 
-1.  What approach would you take for patch management and change tracking for
+5.  What approach would you take for patch management and change tracking for
     their virtual machines?
 
-1.  What solution would you recommend for monitoring their infrastructure and
+6.  What solution would you recommend for monitoring their infrastructure and
     respond against breaches? What about their servers still on-premises?
 
-1.  How can development, administrators and engineers be notified of alerts and
+7.  How can development, administrators and engineers be notified of alerts and
     keep tabs on their infrastructure, even when away from the office?
 
-1.  How can Contoso keep track of the status of their SQL Servers?
+8.  How can Contoso keep track of the status of their SQL Servers?
 
-1.  What approach would you take for web application monitoring and capturing
+9.  What approach would you take for web application monitoring and capturing
     custom telemetry? How can there be a central view of the state of the
     applications? What tools are available to test performance from remote
     geographies?
@@ -401,9 +397,9 @@ following questions on a flip chart.
 
 Directions: With all participants at your table: 
 
-1.  Identify any customer needs that are not addressed with the proposed solution. 
-2.  Identify the benefits of your solution. 
-3.  Determine how you will respond to the customer’s objections. 
+1.  Identify any customer needs that are not addressed with the proposed solution
+2.  Identify the benefits of your solution 
+3.  Determine how you will respond to the customer’s objections 
 
 Prepare a 15-minute chalk-talk style presentation to the customer. 
 
@@ -413,25 +409,25 @@ Prepare a 15-minute chalk-talk style presentation to the customer.
  
 Present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-Time frame: 30 minutes
+Timeframe: 30 minutes
 
 **Presentation** 
 
 Directions:
-1.  Pair with another table.
-2.  One table is the Microsoft team and the other table is the customer.
-3.  The Microsoft team presents their proposed solution to the customer.
-4.  The customer makes one of the objections from the list of objections.
-5.  The Microsoft team responds to the objection.
-6.  The customer team gives feedback to the Microsoft team. 
-7.  Tables switch roles and repeat Steps 2–6.
+1.  Pair with another table
+2.  One table is the Microsoft team and the other table is the customer
+3.  The Microsoft team presents their proposed solution to the customer
+4.  The customer makes one of the objections from the list of objections
+5.  The Microsoft team responds to the objection
+6.  The customer team gives feedback to the Microsoft team 
+7.  Tables switch roles and repeat Steps 2–6
 
 
 ##  Wrap-up 
 
-Time frame: 15 minutes
+Timeframe: 15 minutes
 
--   Tables reconvene with the larger group to hear a SME share the preferred solution for the case study.
+Directions: Tables reconvene with the larger group to hear the facilitator/SME share the preferred solution for the case study.
 
 ##  Additional references
 
@@ -459,48 +455,47 @@ Time frame: 15 minutes
 
 ## Step 1: Review the customer case study
 
--   Check in with your table participants to introduce yourself as the trainer.
+-   Check in with your table participants to introduce yourself as the trainer
 
 -   Ask, "What questions do you have about the customer case study?"
 
--   Briefly review the steps and timeframes of the whiteboard design session.
+-   Briefly review the steps and timeframes of the whiteboard design session
 
--   Ready, set, go! Let the table participants begin.
+-   Ready, set, go! Let the table participants begin
 
 ## Step 2: Design a proof of concept solution
 
--   Check in with your tables to ensure that they are transitioning from step to step on time.
+-   Check in with your tables to ensure that they are transitioning from step to step on time
 
--   Provide some feedback on their responses to the business needs and design.
+-   Provide some feedback on their responses to the business needs and design
 
-    -   Try asking questions first that will lead the participants to discover the answers on their own.
+    -   Try asking questions first that will lead the participants to discover the answers on their own
 
--   Provide feedback for their responses to the customer's objections.
+-   Provide feedback for their responses to the customer's objections
 
-    -   Try asking questions first that will lead the participants to discover the answers on their own.
+    -   Try asking questions first that will lead the participants to discover the answers on their own
 
 ## Step 3: Present the solution
 
--   Determine which table will be paired with your table before Step 3 begins.
+-   Determine which table will be paired with your table before Step 3 begins
 
--   For the first round, assign one table as the Microsoft team and the other table as the customer.
+-   For the first round, assign one table as the Microsoft team and the other table as the customer
 
--   Have the Microsoft team present their solution to the customer team.
+-   Have the Microsoft team present their solution to the customer team
 
-    -   Have the customer team provide one objection for the Microsoft team to respond to.
+    -   Have the customer team provide one objection for the Microsoft team to respond to
 
-    -   The presentation and objections should be no longer than 10-minutes.
+    -   The presentation and objections should be no longer than 10-minutes
 
--   Have participants on the customer team give feedback to the Microsoft team.
+-   Have participants on the customer team give feedback to the Microsoft team
 
-    -   The feedback should be no longer than 5 minutes.
+    -   The feedback should be no longer than 5 minutes
 
-    -   If needed, the trainer may also provide feedback.
+    -   If needed, the trainer may also provide feedback
 
 ## Wrap-up
 
--   Have the table participants reconvene with the larger session group to hear
-    a SME share the following preferred solution.
+-   Have the table participants reconvene with the larger session group to hear the facilitator/SME share the following preferred solution
 
 ##  Preferred target audience
 
@@ -584,13 +579,13 @@ sponsorship and buy in will be important to the success of the solution.
 
     - [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor "Azure Monitor overview documentation page") supports ingesting logs and metrics from multiple sources. This includes application logs, diagnostic logs, and system metrics, such as CPU load, disk capacity, and network utilization. It can also ingest the Azure Activity Log, which records all Azure administrator activity.
     
-    - From this central hub, Azure Monitor supports log storage and archiving, log queries, visualization using the Azure Dashboard, and automation of follow-on tasks using Azure Automation.
+    - From this central hub, Azure Monitor supports log storage and archiving, log queries, visualization using the Azure Dashboard, and automation of follow-on tasks using Azure Automation
     
     - In addition, logs can be passed to other services, for example to Application Insights for deeper analytics, and PowerBI for more detailed investigation and reporting. Logs can also be routed to other services, including third-party services, via Azure Event Hub.
     
-    - Application Insights, Azure Monitor and Azure Log Analytics use the same query language (Kusto Query Language), making it easy for administrators to learn a single approach to querying all data sources.
+    - Application Insights, Azure Monitor and Azure Log Analytics use the same query language (Kusto Query Language), making it easy for administrators to learn a single approach to querying all data sources
 
-    - Azure Monitor also enables alerts to be configured, again providing a single consistent hub for managing all alerts across the platform.
+    - Azure Monitor also enables alerts to be configured, again providing a single consistent hub for managing all alerts across the platform
     
         ![Diagram showing application logs, metrics, diagnostic logs, VM OS logs and Azure activity logs as data sources for Azure Monitor, with options to route data to other services, store or archive data, query data, visualize data, or automate activities based on data.](images/image34.png "Azure Monitor data sources and actions")
 
@@ -617,7 +612,7 @@ sponsorship and buy in will be important to the success of the solution.
 
     -  Using an Infrastructure as Code approach, all DSC configurations and
        Resource Manager Templates will be managed using a source control system
-       such as GitHub.
+       such as GitHub
     -  All Azure resource management operations are tracked in the Azure
        Activity Log, which is integrated with Azure Monitor and Azure Log
        Analytics. This integration enables easy and powerful searching, and
@@ -695,13 +690,13 @@ sponsorship and buy in will be important to the success of the solution.
       important. Using the Update Management automation solution allows for
       managing the updates for Windows and Linux VMs.
     - The Services Operations Center (SOC) can check the patch status of any VM
-      simply by navigating to the 'Update Management' tile on the virtual machine blade.
+      simply by navigating to the 'Update Management' tile on the virtual machine blade
 
       ![Screenshot of the Virtual Machine blade showing the Update Management tile.](images/image25.png "Virtual Machine Update Status")
 
     - The Service Operation Center (SOC) can also get an all-up view of update
       status across their Azure VMs by navigating to the 'Update Management'
-      tile of their Azure Automation account.
+      tile of their Azure Automation account
 
       ![Screenshot of the Azure Automation blade showing the Update Management tile.](images/image26.png "Azure Automation Update Status")
 
@@ -746,26 +741,26 @@ sponsorship and buy in will be important to the success of the solution.
 
         **Centralized policy management** -- Ensure compliance with company or
         regulatory security requirements by centrally managing security policies
-        across all hybrid cloud workloads.
+        across all hybrid cloud workloads
 
         **Continuous security assessment** -- Monitor the security of machines,
         networks, storage and data services, and applications to discover
-        potential security issues.
+        potential security issues
 
         **Actionable recommendations** -- Remediate security vulnerabilities
         before they can be exploited by attackers with prioritized and
-        actionable security recommendations.
+        actionable security recommendations
 
         **Advanced cloud defenses** -- Reduce threads with just in time access
         to management ports and whitelisting to control applications running on
-        VMs.
+        VMs
 
         **Prioritized alerts and incidents** -- Focus on the most critical
-        threats first with prioritized security alerts and incidents.
+        threats first with prioritized security alerts and incidents
 
         **Integrated security solutions** -- Collect, search, and analyze
         security data from a variety of sources, included connected partner
-        solutions.
+        solutions
 
         ![The Azure Security Center desktop displays.](images/image8.png "Azure Security Center")
 
@@ -836,7 +831,7 @@ sponsorship and buy in will be important to the success of the solution.
     - The telemetry data that is sent to Applications Insights portal can be
       viewed in many ways: Dashboards (including the Azure Portal), Application
       Map, Live Metrics Stream, Metrics Explorer for aggregated data, PowerBI
-      and others.
+      and others
 
         ![Screenshot of Live Metrics Stream telemetry data in various graph formats.](images/image12.png "Live Metrics Stream")
 
@@ -935,14 +930,14 @@ sponsorship and buy in will be important to the success of the solution.
        to provide insights into traffic flow in your Azure cloud. With traffic
        analytics, you can:
        - Visualize network activity across your Azure subscriptions and identify
-         hot spots.
+         hot spots
        - Identify security threats to, and secure your network, with
          information such as open-ports, applications attempting internet
-         access, and virtual machines (VM) connecting to rogue networks.
+         access, and virtual machines (VM) connecting to rogue networks
        - Understand traffic flow patterns across Azure regions and the internet
-         to optimize your network deployment for performance and capacity.
+         to optimize your network deployment for performance and capacity
        - Pinpoint network misconfigurations leading to failed connections in
-         your network.
+         your network
 
     ![Diagram showing data flow for Network Watcher Traffic Analytics.](images/image29.png "Network Watcher Traffic Analytics data flow")
 
@@ -996,7 +991,7 @@ sponsorship and buy in will be important to the success of the solution.
     encryption, with key management in accordance with Contoso company policies.
 
     - All Azure VM disks (both managed and unmanaged) benefit from the always-on
-      Azure Storage Service Encryption, using Microsoft-managed keys.
+      Azure Storage Service Encryption, using Microsoft-managed keys
     - In addition, Azure supports VM-level disk encryption, using Bitlocker
       (Windows) and DM-Crypt (Linux). This solution takes advantage of Azure Key Vault
       enabling the customer to control and manage the disk encryption keys.
