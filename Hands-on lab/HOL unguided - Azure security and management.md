@@ -158,11 +158,11 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 #### Tasks to complete 
 
--   Create an Azure Automation account in a new Resource group called **HOLRG**.
+-   Create an Azure Automation account in a new Resource group called **HOLRG**
 
 ##### Exit criteria
 
--   There is now an Azure Automation account.
+-   There is now an Azure Automation account
 
 ### Task 2: Add an Azure Automation Credential
 
@@ -180,7 +180,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 ##### Exit criteria
 
--   There is now an Automation Credential.
+-   There is now an Automation Credential
 
 ### Task 3: Upload DSC configurations into automation account
 
@@ -190,7 +190,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 #### Exit criteria
 
--   The DSC nodes have been configured. using thee two PowerShell DSC scripts provided in the Student files.
+-   The DSC nodes have been configured. using thee two PowerShell DSC scripts provided in the Student files
 
 ## Exercise 2: Build CloudShop environment
 
@@ -204,9 +204,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 #### Tasks to complete 
 
-1.  Locate the Access Keys and URL for your Azure Automation account.
+1.  Locate the Access Keys and URL for your Azure Automation account
 
-2.  Using the Azure Portal perform a Template Deployment using the **C:\\HOL\\OMSHOL-azuredeploy.json** file and the **C:\\HOL\\parameters.txt** to complete the required inputs.
+2.  Using the Azure Portal perform a Template Deployment using the **C:\\HOL\\OMSHOL-azuredeploy.json** file and the **C:\\HOL\\parameters.txt** to complete the required inputs
 
 3.  Verify the deployment worked correctly by viewing the CloudShop website by pointing a web browser at the Azure Load balancer. Make sure you can see two VMs answering your http calls.
 
@@ -217,15 +217,15 @@ In this exercise, you will run a template deployment using an ARM template provi
 ### Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules
 
 #### Tasks to complete 
-1.  Configure the Azure Load Balancer to allow RDP access to both **WEBVM1** and **WEBVM2**.
+1.  Configure the Azure Load Balancer to allow RDP access to both **WEBVM1** and **WEBVM2**
 
-2.  RDP to each of the servers, and disable the IE Enhanced Security Configuration.
+2.  RDP to each of the servers, and disable the IE Enhanced Security Configuration
 
 #### Exit criteria
 
--   It is possible to RDP to **WEBVM1** and **WEBVM2** through the Azure Load Balancer.
+-   It is possible to RDP to **WEBVM1** and **WEBVM2** through the Azure Load Balancer
 
--   All the Servers can now use the IE Web Browsers normally.
+-   All the Servers can now use the IE Web Browsers normally
 
 ### Task 3: Configure diagnostics accounts for the VMs
 
@@ -234,7 +234,7 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 #### Exit criteria
 
--   The Diagnostics were setup for each VM.
+-   The Diagnostics were setup for each VM
 
 ## Exercise 3: Build and configure the Azure Security Center and Azure Management
 
@@ -247,27 +247,27 @@ The next step is to provision the Azure security and Azure management components
 ### Task 1: Provision Log Analytics through Azure Monitor
 
 #### Tasks to complete
-1.  Use Azure Monitor to create a Log Analytics workspace to make sure to use the OMS pricing tier.
+1.  Use Azure Monitor to create a Log Analytics workspace to make sure to use the OMS pricing tier
 
-2.  Connect the Virtual machines from the **HOLRG**.
+2.  Connect the Virtual machines from the **HOLRG**
 
 #### Exit criteria
 
--   The Log Analytics portal was created.
+-   The Log Analytics portal was created
 
--   The VMs that make of the CloudShop Application are connected to the workspace.
+-   The VMs that make of the CloudShop Application are connected to the workspace
 
 ### Task 2: Explore Security Center
 
 #### Tasks to complete 
 
-1.  Open the Azure portal and navigate to the **Security Center** menu option.
+1.  Open the Azure portal and navigate to the **Security Center** menu option
 
-2.  Upgrade to Standard tier to get advanced security.
+2.  Upgrade to Standard tier to get advanced security
 
 #### Exit criteria
 
--   Azure Security Center has been upgraded to the Standard tier.
+-   Azure Security Center has been upgraded to the Standard tier
 
 ### Task 3: Add Service Map
 
@@ -287,15 +287,15 @@ The next step is to provision the Azure security and Azure management components
 
 -   Open a web browser to download and run the Microsoft Dependency Agent installer from <https://aka.ms/dependencyagentwindows>
 
--   Perform these same steps on **WEBVM2.**
+-   Perform these same steps on **WEBVM2**
 
--   Navigate to All resources menu item in the Azure Portal and locate the Service Map created earlier.
+-   Navigate to All resources menu item in the Azure Portal and locate the Service Map created earlier
 
--   Drill down to the **WEBVM1** to see how Service Map monitors the services in the virtual machine.
+-   Drill down to the **WEBVM1** to see how Service Map monitors the services in the virtual machine
 
 #### Exit criteria
 
--   The Microsoft Dependency Agent has been installed on **WEBVM1** and **WEBVM2.**
+-   The Microsoft Dependency Agent has been installed on **WEBVM1** and **WEBVM2**
 
 ### Task 5: Configure Update Management
 
@@ -332,56 +332,56 @@ In this exercise, you will instrument the CloudShop using Application Insights a
 
 1.  Connect to the **WEBVM1** and install the Application Insights Monitor using this Link: <http://bit.ly/2jxQ43z>
 
-2.  Configure Applications Insights Monitor to Send Telemetry to a New Application Insights resource that will be in a new resource group named the **HOLInsights**.
+2.  Configure Applications Insights Monitor to Send Telemetry to a New Application Insights resource that will be in a new resource group named the **HOLInsights**
 
 3.  Make sure to **Add Application Insights** to the default application and Restart IIS. Make sure that data is flowing to Azure.
 
-4.  Complete the same steps as above on **WEBVM2**, but pointing the Telemetry to the Application Insights created on **WEBVM1**.
+4.  Complete the same steps as above on **WEBVM2**, but pointing the Telemetry to the Application Insights created on **WEBVM1**
 
 #### Exit criteria
 
--   Application Insights Monitor was installed and configured on **WEBVM1** and **WEBVM2**.
+-   Application Insights Monitor was installed and configured on **WEBVM1** and **WEBVM2**
 
--   The CloudShop Application on both servers is sending live telemetry data to the newly created Application Insights workspace in Azure.
+-   The CloudShop Application on both servers is sending live telemetry data to the newly created Application Insights workspace in Azure
 
 ### Task 2: Configure the Applications Insights workspace in Azure
 
 #### Tasks to complete 
 
-1.  In the Azure portal ensure that you see two servers sending live stream data and that App Map shows the application and dependency of the SQL Server.
+1.  In the Azure portal ensure that you see two servers sending live stream data and that App Map shows the application and dependency of the SQL Server
 
 2.  Configure an alert called **CloudShopProcessorAlert.** This will capture **Processor Time**, **Greater than 80%,** **Over the Last 5 Minutes** and have it Email the Owners.
 
-3.  Next, add a **Web Test** named **CloudShopWebTest** using a **URL Ping Test** against your site with locations from all over the world.
+3.  Next, add a **Web Test** named **CloudShopWebTest** using a **URL Ping Test** against your site with locations from all over the world
 
-4.  Now, add a new Performance Test using Application Insights named **CloudShopLoadTest** with 2000 users for a duration of 5 minutes from a Region of your choice. **Run the Test**.
+4.  Now, add a new Performance Test using Application Insights named **CloudShopLoadTest** with 2000 users for a duration of 5 minutes from a Region of your choice. **Run the Test**
 
-5.  As the test is running use the **Live Stream** and the **Load Test Blade** to observe the Test and the performance of the CloudShop Application.
+5.  As the test is running use the **Live Stream** and the **Load Test Blade** to observe the Test and the performance of the CloudShop Application
 
 #### Exit criteria
 
--   The Servers were found to be providing Live Stream Data to the Azure Applications Insights portal.
+-   The Servers were found to be providing Live Stream Data to the Azure Applications Insights portal
 
--   An alert email was received based on the simulated failure of the CloudShop website.
+-   An alert email was received based on the simulated failure of the CloudShop website
 
 -   An alert was created to send an email to the owner of the subscription if the Processor was over 80% utilization for 5 minutes. Because of the Load Test, the alert was triggered, and an email was received by the HOL participant. One minute after the Load Test was complete, the alert will be resolved, and another email will be received.
 
--   A Load test of the CloudShop application was completed, and data was collected on the performance of the web application.
+-   A Load test of the CloudShop application was completed, and data was collected on the performance of the web application
 
--   The participant used the Live Stream to observe how the application performed under load.
+-   The participant used the Live Stream to observe how the application performed under load
 
 ### Task 3: Simulate a failure of the CloudShop application
 
 #### Tasks to complete 
-1.  Simulate an outage of the Cloud Shop Application by stopping your two web servers, and see how the alerts capture and warn you as the administrator of the outage.
+1.  Simulate an outage of the Cloud Shop Application by stopping your two web servers, and see how the alerts capture and warn you as the administrator of the outage
 
-2.  Start the web servers to resolve the simulated outage, and resolve the alerts.
+2.  Start the web servers to resolve the simulated outage, and resolve the alerts
 
 #### Exit criteria
 
--   Alerts were received of the outage.
+-   Alerts were received of the outage
 
--   The alerts are resolved due to the website being back online.
+-   The alerts are resolved due to the website being back online
 
 ## Exercise 5: Explore Azure Security and Operations Management, Application Insights and build a dashboard
 
@@ -395,76 +395,76 @@ In this exercise, you will explore the information and data being provided by OM
 
 #### Tasks to complete 
 
-1.  From your Log Analytics Blade pin your Log Search to the My Dashboard you create in the Azure Portal.
+1.  From your Log Analytics Blade pin your Log Search to the My Dashboard you create in the Azure Portal
 
 2.  Using the Log Analytics Search, export a filtered report based on the Security Baseline Data. You will want the filter to be Failed in ANALYZERESULT, and only have those errors which warning or Warning and Critical both in RULESSVERTTY. Make sure the Critical show up at the top of the report.
 
-3.  Save your Search provided the data in the above report in Azure.
+3.  Save your Search provided the data in the above report in Azure
 
 #### Exit criteria
 
--   The Log Search box should be pinned to the My Dashboard in the Azure Portal.
+-   The Log Search box should be pinned to the My Dashboard in the Azure Portal
 
--   A report should be exported to Excel with all the Warnings and Critical Errors found using the Security Baseline analyzer runs that OMS has completed.
+-   A report should be exported to Excel with all the Warnings and Critical Errors found using the Security Baseline analyzer runs that OMS has completed
 
--   The search should be saved in the portal.
+-   The search should be saved in the portal
 
 ### Task 2: Preventive maintenance using Security Center
 
 #### Tasks to complete 
 
-1.  Use Azure Security Center to under what preventative steps can be taken to protect your environment.
+1.  Use Azure Security Center to under what preventative steps can be taken to protect your environment
 
-2.  Note the actions and recommendations that Security Center provides.
+2.  Note the actions and recommendations that Security Center provides
 
 #### Exit criteria
 
--   You understand some of the baseline recommendations that Security Center provides across the Compute, Network, Storage & data, and Applications data planes.
+-   You understand some of the baseline recommendations that Security Center provides across the Compute, Network, Storage & data, and Applications data planes
 
 ### Task 3: Set up an Activity Log alert
 
 #### Tasks to complete 
 
-1.  Using the portal, create an alert through Azure Monitor that will send an Azure app notification when a virtual machine is stopped (deallocated) in the HOLRG resource group.
+1.  Using the portal, create an alert through Azure Monitor that will send an Azure app notification when a virtual machine is stopped (deallocated) in the HOLRG resource group
 
 #### Exit criteria
 
--   The alert has been successfully created.
+-   The alert has been successfully created
 
 ### Task 4: Installing & using the Azure mobile application
 
 #### Tasks to complete 
 
-1.  Using your mobile phone's AppStore, install the Microsoft Azure app on your smartphone, allow notifications and sign-in to Azure.
+1.  Using your mobile phone's AppStore, install the Microsoft Azure app on your smartphone, allow notifications and sign-in to Azure
 
-2.  In the Azure portal, navigate to **WEBVM1** virtual machine panel and stop (deallocate) the virtual machine.
+2.  In the Azure portal, navigate to **WEBVM1** virtual machine panel and stop (deallocate) the virtual machine
 
 3.  Find the alerts that have been sent to your phone. Drill into one of those alerts to see the data.
 
 #### Exit criteria
 
--   The Azure mobile app is installed on your smartphone.
+-   The Azure mobile app is installed on your smartphone
 
--   You have looked through the notifications available and filtered the data on your phone.
+-   You have looked through the notifications available and filtered the data on your phone
 
--   The alert you created has fired off and caused you to get smartphone notifications, based on stopping one of the web server virtual machines.
+-   The alert you created has fired off and caused you to get smartphone notifications, based on stopping one of the web server virtual machines
 
 ### Task 5: Application Insights
 
 #### Tasks to complete 
 
 
-1.  Open the Application Insights portal Azure Monitor and use the Performance item under the Investigate section to review performance related metrics for the web applications**.**
+1.  Open the Application Insights portal Azure Monitor and use the Performance item under the Investigate section to review performance related metrics for the **web applications**
 
 2.  Drill into this dashboard and review the information. Filter the data to see more detailed information.
 
-3.  Pin this dashboard to your My Dashboard.
+3.  Pin this dashboard to your My Dashboard
 
-4.  Close the Blades, and on your My Dashboard, take a few minutes to rearrange, and build a nice looking and informative dashboard for your prototype.
+4.  Close the Blades, and on your My Dashboard, take a few minutes to rearrange, and build a nice looking and informative dashboard for your prototype
 
 #### Exit criteria
 
--   The Application Insights performance data was reviewed and filtered to show data for the last 24 hours.
+-   The Application Insights performance data was reviewed and filtered to show data for the last 24 hours
 
 -   The Application now has a dashboard with data about the infrastructure, and the application makes up the CloudShop. The customer now has a fully implemented system to manage and monitor their application in Azure IaaS.
 
@@ -474,7 +474,8 @@ Duration: 10 mins
 
 ### Overview
 
-In this exercise, attendees will de-provision any Azure resources that were created in support of the lab.
+In this exercise, attendees will de-provision any Azure resources that were created in support of the lab
 
-1.  Delete the **HOLRG**, **HOLInsights**, and **OPSLABRG** resource groups.
+1.  Delete the **HOLRG**, **HOLInsights**, and **OPSLABRG** resource groups
 
+You should follow all steps provided _after_ attending the Hands-on lab.
