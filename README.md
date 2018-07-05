@@ -1,6 +1,6 @@
 Link to [Download Workshop](https://github.com/Microsoft/MCW-Azure-security-and-management/archive/master.zip)
 
-# Azure Security and Management
+# Azure security and management
 
 Contoso Holdings is a multi-national holding company headquartered in Los Angeles, CA that owns 48 manufacturing companies located in North America, Europe and Asia. In this workshop, you will help Contoso Holdings design and implement the systems to manage their Azure infrastructure at scale.
 
@@ -10,7 +10,7 @@ Per Roberto Milian, VP of Development and IT Operations, "Contoso's primary conc
 -	Infrastructure Architect
 -	IT Professional
 -	DevOps Engineer
--   Cloud Solution Architect
+- Cloud Solution Architect
 
 ## Abstract
 
