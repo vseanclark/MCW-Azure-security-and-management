@@ -1,35 +1,45 @@
-# Abstract
+Link to [Download Workshop](https://github.com/Microsoft/MCW-Azure-security-and-management/archive/master.zip)
 
-## Workshop
+# Azure security and management
 
-The student will deploy and monitor a web application that has been deployed to Azure IaaS in this Hands-on Lab (HOL). Azure security and management services will be used to manage and monitor the operational performance and security of the underlying infrastructure. Azure Application Insights will be used to monitor performance, application usage, and identify the cause of any application issues that emerge.
+Contoso Holdings is a multi-national holding company headquartered in Los Angeles, CA that owns 48 manufacturing companies located in North America, Europe and Asia. In this workshop, you will help Contoso Holdings design and implement the systems to manage their Azure infrastructure at scale.
 
-## Whiteboard Design Session
-TBD
+Per Roberto Milian, VP of Development and IT Operations, "Contoso's primary concern is how to best: deploy, test, manage, monitor, patch, secure and troubleshoot these applications in Azure IaaS."
 
-## Hand-on Lab
-TBD
+## Target audience
+-	Infrastructure Architect
+-	IT Professional
+-	DevOps Engineer
+- Cloud Solution Architect
 
+## Abstract
+
+### Workshop
+With increasing number of resources running in the cloud, enterprise will need to apply the right capabilities to secure and well manage their data and resources. In this workshop, the student will design solutions using Azure’s native security and management services.
+
+### Whiteboard design session
+In this whiteboard design session, you will work in a group to examine Contoso's enterprise environment with resources hosted on both on-premises and Azure. In a small working team, students will whiteboard design how Azure Security Center, Key Vault, Update management, as well as Azure Monitor and Application Insights can help secure and well manage applications and virtual machines. Students will also have the opportunity to design governance through Azure Policy.
+
+### Hands-on lab
+In this hands-on lab, you will first deploy a simple web application and database to Azure IaaS VMs, using a Resource Manager Template and Azure Automation DSC. You will then configure a range of infrastructure management capabilities on this deployment, including Update Management, Security Center, Service Map, Change Tracking and Application Insights. You will also use Azure Monitor to configure application alerts, send via both email and mobile application notifications. You will also learn how to further investigate infrastructure status using Log Analytics queries. In doing so, you will learn both how to deploy these solutions and be introduced to their capabilities.
+
+At the end of this hands-on lab, you will be better able to design, implement and use a wide range of infrastructure management systems in Azure.
+
+NOTE: The setup tasks should be completed in advance of the hands-on lab to save deployment time.
 
 ## Azure services and related products
+- Azure Automation
 - Azure Monitor
-- Log Analytics
-- Azure VMs
-- Azure Application Insights
-- Azure Security Center
+- Azure Log Analytics
+- Change Tracking
+- Update Management
+- Security Center
+- Service Map
+- Application Insights
+- Virtual machines
 
+## Azure hero solution
+*This is an internal reference and will be updated by project PM.*
 
-# Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
+## Related references
+- [MCW](https://github.com/Microsoft/MCW)
