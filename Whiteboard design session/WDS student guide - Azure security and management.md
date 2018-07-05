@@ -45,7 +45,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Abstract and learning objectives 
 
-In this session, the customer is looking for managing and monitoring solutions for their Azure IaaS move to the cloud. The student will need to provide solutions for dealing with both the VMs and the Application.
+In this whiteboard design session, you will work in a group to examine Contoso's enterprise environment with resources hosted on both on-premises and Azure. In a small working team, students will whiteboard design how Azure Security Center, Key Vault, Update management, as well as Azure Monitor and Application Insights can help secure and well manage applications and virtual machines. Students will also have the opportunity to design governance through Azure Policy.
 
 ## Step 1: Review the customer case study 
 

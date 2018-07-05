@@ -44,10 +44,10 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
     - [Wrap-up](#wrap-up)
     - [Additional references](#additional-references)
 - [Azure security and management whiteboard design session trainer guide](#azure-security-and-management-whiteboard-design-session-trainer-guide)
-    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study-1)
-    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution-1)
-    - [Step 3: Present the solution](#step-3-present-the-solution-1)
-    - [Wrap-up](#wrap-up-1)
+    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3-present-the-solution)
+    - [Wrap-up](#wrap-up)
     - [Preferred target audience](#preferred-target-audience)
     - [Preferred solution](#preferred-solution)
     - [Checklist of preferred objection handling](#checklist-of-preferred-objection-handling)
@@ -165,7 +165,7 @@ When participants are doing activities, you can **look ahead to refresh your mem
 
 ## Abstract and learning objectives 
 
-In this session, the customer is looking for managing and monitoring solutions for their Azure IaaS move to the cloud. The student will need to provide solutions for dealing with both the VMs and the Application.
+In this whiteboard design session, you will work in a group to examine Contoso's enterprise environment with resources hosted on both on-premises and Azure. In a small working team, students will whiteboard design how Azure Security Center, Key Vault, Update management, as well as Azure Monitor and Application Insights can help secure and well manage applications and virtual machines. Students will also have the opportunity to design governance through Azure Policy.
 
 ## Step 1: Review the customer case study 
 

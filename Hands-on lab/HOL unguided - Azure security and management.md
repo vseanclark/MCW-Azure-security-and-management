@@ -111,7 +111,11 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Abstract and learning objectives 
 
-The student will deploy and monitor a web application that has been deployed to Azure IaaS in this Hands-on Lab (HOL). The Operations Management Suite will be used to manage and monitor the operation performance and security of the underlying infrastructure. Azure Application Insights will be used to monitor performance, application usage and identify the cause of any application issues that emerge.
+In this hands-on lab, you will first deploy a simple web application and database to Azure IaaS VMs, using a Resource Manager Template and Azure Automation DSC. You will then configure a range of infrastructure management capabilities on this deployment, including Update Management, Security Center, Service Map, Change Tracking and Application Insights. You will also use Azure Monitor to configure application alerts, send via both email and mobile application notifications. You will also learn how to further investigate infrastructure status using Log Analytics queries. In doing so, you will learn both how to deploy these solutions and be introduced to their capabilities.
+
+At the end of this hands-on lab, you will be better able to design, implement and use a wide range of infrastructure management systems in Azure.
+
+NOTE: The setup tasks should be completed in advance of the hands-on lab to save deployment time.
 
 ## Overview
 
