@@ -42,4 +42,4 @@ NOTE: The setup tasks should be completed in advance of the hands-on lab to save
 *This is an internal reference and will be updated by project PM.*
 
 ## Related references
-n/a
+- [MCW](https://github.com/Microsoft/MCW)
