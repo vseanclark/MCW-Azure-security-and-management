@@ -931,7 +931,7 @@ sponsorship and buy in will be important to the success of the solution.
        assessment helps to discover potential security issues, such as systems
        with missing security updates or exposed network ports.
 
-    ![Screenshot of the Security Center - Compute blade.](images/image24.png "Security Center - Compute blade")
+    ![Screenshot of the Security Center - Overview blade.](images/image24.png "Security Center - Overview blade")
 
     -  Network Watcher Traffic Analytics is a cloud-based solution that provides
        visibility into user and application activity in cloud networks. Traffic
