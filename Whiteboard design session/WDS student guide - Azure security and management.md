@@ -45,7 +45,9 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Abstract and learning objectives 
 
-In this whiteboard design session, you will work in a group to examine Contoso's enterprise environment with resources hosted on both on-premises and Azure. In a small working team, students will whiteboard design how Azure Security Center, Key Vault, Update management, as well as Azure Monitor and Application Insights can help secure and well manage applications and virtual machines. Students will also have the opportunity to design governance through Azure Policy.
+In this whiteboard design session, you will work in a group to examine Contoso's enterprise environment with resources hosted on both on-premises and Azure. In a small working team, you will whiteboard design how Azure Security Center, Key Vault, Update management, as well as Azure Monitor and Application Insights, can help secure and well manage applications and virtual machines. You will also have the opportunity to design governance through Azure Policy.
+
+At the end of this whiteboard design session, you will be better able to design a security and management solutions in Azure including inventory tracking and management, application performance monitoring, preventative maintenance and application and security alerting.
 
 ## Step 1: Review the customer case study 
 
