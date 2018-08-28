@@ -111,7 +111,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ## Abstract and learning objectives 
 
-In this hands-on lab, you will first deploy a simple web application and database to Azure IaaS VMs, using a Resource Manager Template and Azure Automation DSC. You will then configure a range of infrastructure management capabilities on this deployment, including Update Management, Security Center, Service Map, Change Tracking and Application Insights. You will also use Azure Monitor to configure application alerts, send via both email and mobile application notifications. You will also learn how to further investigate infrastructure status using Log Analytics queries. In doing so, you will learn both how to deploy these solutions and be introduced to their capabilities.
+In this hands-on lab, you will first deploy a simple web application and database to Azure IaaS VMs, using a Resource Manager Template and Azure Automation DSC. You will then configure a range of infrastructure management capabilities on this deployment, including Update Management, Security Center, Service Map, Change Tracking and Application Insights. You will use Azure Monitor to configure application alerts and send, via both email and mobile application notifications. You will also learn how to further investigate infrastructure status using Log Analytics queries. In doing so, you will learn both how to deploy these solutions and be introduced to their capabilities.
 
 At the end of this hands-on lab, you will be better able to design, implement and use a wide range of infrastructure management systems in Azure.
 
