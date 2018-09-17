@@ -144,13 +144,13 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![Fields in the Add Automation Account blade are set to the previously defined settings.](images/Lab-guide/image22.png "Add Automation Account blade")
 
-5.  Click the **Pin to Dashboard,** then select **Create**
+5.  Click **Create**
 
-    ![The Create button displays under the selected Pin to dashboard checkbox.](images/Lab-guide/image23.png "Pin to dashboard checkbox")
+
 
 ### Task 2: Add an Azure Automation credential
 
-1.  The CloudShopSQL DSC configuration requires a credential object to access the local administrator account on the virtual machine. Within the Azure Automation DSC configuration select **Credentials** in the **SHARED RESOURCES** section.
+1.  The CloudShopSQL DSC configuration requires a credential object to access the local administrator account on the virtual machine. Within the newly created Azure Automation DSC configuration select **Credentials** in the **SHARED RESOURCES** section.
 
     ![Under Shared Resources, Credentials is selected.](images/Lab-guide/image24.png "Shared Resources section")
 
@@ -172,7 +172,7 @@ Important: It is important to use the exact name for the credential, because one
 
 ### Task 3: Upload DSC configurations into automation account
 
-1.  Select **Resource groups \> HOLRG \> Automation-Acct** and click **DSC Configurations**
+1.  Select **Resource groups \> HOLRGAUTO \> Automation-Acct** and click **State Configurations (DSC) in Configuration Management** then select **configuration** then selet **Add**
 
 > ![Screenshot of the Automation Account blade.](images/Lab-guide/image27.png "Automation Account blade")
 
@@ -348,7 +348,7 @@ Now that the deployment and the application is up and running, the next step is 
 
     ![In the Resource group blade, under Name, loadBalancer1 is selected.](images/Lab-guide/image48.png "Resource group blade")
 
-2.  On the **loadBalancer1** blade, locate **Inbound NAT rules,** and select **Settings**
+2.  On the **loadBalancer1** blade, locate **Inbound NAT rules in Settings**
 
     ![In the LoadBalancer 1 blade, under Settings, Inbound NAT rules is selected.](images/Lab-guide/image49.png "LoadBalancer 1 blade")
 
