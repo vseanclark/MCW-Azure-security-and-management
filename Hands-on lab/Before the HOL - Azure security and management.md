@@ -9,7 +9,7 @@ Before the hands-on lab setup guide
 </div>
 
 <div class="MCWHeader3">
-June 2018
+September 2018
 </div>
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -30,9 +30,9 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
     - [Requirements](#requirements)
     - [Before the hands-on lab](#before-the-hands-on-lab)
         - [Overview](#overview)
-        - [Task 1: Build a Lab Virtual Machine in Azure.](#task-1-build-a-lab-virtual-machine-in-azure)
-        - [Task 2: Connect to LABVM & download and unzip student files](#task-2-connect-to-labvm--download-and-unzip-student-files)
-        - [Task 3: Create a new Azure portal dashboard](#task-3-create-a-new-azure-portal-dashboard)
+        - [Task 1: Build a Lab Virtual Machine in Azure.](#task-1--build-a-lab-virtual-machine-in-azure)
+        - [Task 2: Connect to LABVM & download and unzip student files](#task-2--connect-to-labvm-download-and-unzip-student-files)
+        - [Task 3: Create a new Azure portal dashboard](#task-3--create-a-new-azure-portal-dashboard)
         - [Summary](#summary)
 
 <!-- /TOC -->
