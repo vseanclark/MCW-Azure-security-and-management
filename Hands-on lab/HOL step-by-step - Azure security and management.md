@@ -510,15 +510,13 @@ The next step is to provision the Azure security and Azure management components
 
 ### Task 1: Provision Log Analytics through Azure Monitor
 
-1.  Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*monitor*", and selecting **Monitor**
+1.  Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*Log Analytics*", and selecting **Monitor**
 
 > ![Screenshot of the Azure portal with the previous selections displaying.](images/Lab-guide/image66.png "Azure portal")
 
-2.  In the Azure Monitor blade, select **Log Analytics**
+2.  In the Log Analytics blade, select **+Add**
 
-> ![In the Azure Monitor blade, Log Analytics is highlighted.](images/Lab-guide/image67.png "Log Analytics selection")
-
-3.  Complete the OMS Workspace blade using the following information. Then, select **Pin to Dashboard** then **OK**:
+3.  Complete the OMS Workspace blade using the following information. Then, select  **OK**:
 
     a.  OMS Workspace: **Unique name**
 
@@ -528,7 +526,7 @@ The next step is to provision the Azure security and Azure management components
 
     d.  Location: **Closest to your deployment**
 
-    e.  Pricing Tier: **Select Per Node (OMS)**
+    e.  Pricing Tier: **Select Per GB**
 
     ![Fields in the OMS Workspace and Pricing Tier blades are set to the prevoiusly defined settings.](images/Lab-guide/image68.png "OMS Workspace and Pricing Tier blades")
 
@@ -756,7 +754,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     ![Screenshot of the Azure sign in box.](images/Lab-guide/image102.png "Azure sign in box")
 
-6.  Under the **Send telemetry to**: Select **New Application Insights resource**. Then, click **Configure settings**.
+6.  Under the **Send telemetry to**: Select **Default website under New Application Insights resource**. Then, click **Configure settings**.
 
     ![Under Configuration, Send telemetry to is set to New Application Insights resource and the Configure settings button is selected.](images/Lab-guide/image103.png "Configuration section")
 
@@ -788,9 +786,9 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 12. Disconnect from **WEBVM1**
 
-13. Connect to a Remote Desktop Session for **WEBVM2**
+13. Connect to a Remote Desktop Session for **WEBVM2**. If you RDP to the public IP it may take you to the WEBVM1 again because of Loadbalancer rule. So in order to connect to the WEBVM2, You can RDP to its private IP from the WEBVM1. 
 
-14. Open Internet Explorer and follow this link: <http://bit.ly/2jxQ43z>. Select **Run** on the Question if you want to run the file: **AppliationsInsightsMonitor.exe**.
+14. Open Internet Explorer and follow this link: <http://bit.ly/2jxQ43z>. Select **Run** on the Question if you want to run the file: **AppliationsInsightsMonitor.exe**. You may need to change the internet explorer security settings to allow download file in order to install.
 
     ![Screenshot of the Run button.](images/Lab-guide/image99.png "Run button")
 
@@ -806,7 +804,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 > ![Screenshot of the Microsoft Sign in box.](images/Lab-guide/image102.png "Microsoft Sign in box")
 
-18. Under the **Send telemetry to**: Select **Existing Application Insights resource**. Then, click **Configure Settings**.
+18. Under the **Send telemetry to**: Select **Default website under Existing Application Insights resource**. Then, click **Configure Settings**.
 
     ![Send telemetry to is set to Existing Application Insights resource, and Configure settings is selected.](images/Lab-guide/image108.png "Send telemetry to section")
 
@@ -847,11 +845,11 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 	![Screenshot of the Application Map.](images/Lab-guide/image114.png "Application Map")
 
-4.  Close the **Application Map** pane, then Click on the **Alerts (Classic)** in the **Configure** section of the Application Insights blade.
+4.  Close the **Application Map** pane, then Click on the **Alerts** in the **Configure** section of the Application Insights blade.
 
     ![Under Configure, Alerts (Classic) is selected.](images/Lab-guide/image115.png "Alerts (Classic) selection")
 
-5.  Select **+Add Metric Alert,** complete the blade with the following information, and select **OK**
+5.  Select **View Classic Alert (next to the bell icon)** then select **+Add Metric Alert (Classic),** complete the blade with the following information, and select **OK**
 
     a.  Name: **CloudShopProcessorAlert**
 
@@ -899,7 +897,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 11.  Select **Performance Testing** in the **Configure** section
 
-    ![Under Configure, Performance Testing is selected.](images/Lab-guide/image121.png "Configure section")
+![Under Configure, Performance Testing is selected.](images/Lab-guide/image121.png "Configure section")
 
 12.  Select **+New**
 
@@ -909,7 +907,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     b.  URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
 
-	![Fields in the Configure test using blade are set to the previously defined settings.](images/Lab-guide/image122.png "Configure test using blade")
+![Fields in the Configure test using blade are set to the previously defined settings.](images/Lab-guide/image122.png "Configure test using blade")
 
 14.  Complete the **New Performance Test** blade using the following information, and click **Run Test**.
 
@@ -921,7 +919,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     d.  Duration: **5**
 
-        ![Fields in the New performance test blade are set to the previously defined settings.](images/Lab-guide/image123.png "New performance test blade")
+![Fields in the New performance test blade are set to the previously defined settings.](images/Lab-guide/image123.png "New performance test blade")
 
 15.  Select **Run Test** to start the performance test
 
@@ -929,7 +927,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 16.  Once this is submitted it will show as **Queued.** Select the line and then details about the performance test will be shown.
 
-    ![CloudShopLoadTest is selected under Recent runs in the Performance Testing blade.](images/Lab-guide/image124.png "Performance Testing blade")
+![CloudShopLoadTest is selected under Recent runs in the Performance Testing blade.](images/Lab-guide/image124.png "Performance Testing blade")
 
 17.  Select the Messages box to see the details of the test
 
@@ -937,33 +935,33 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 18.  Now, head back to the Overview blade of the **HOLCloudShop** Application Insights and select **Live Metrics Stream**
 
-    ![The Live Stream tile lists two servers.](images/Lab-guide/image126.png "Live Stream tile")
+![The Live Stream tile lists two servers.](images/Lab-guide/image126.png "Live Stream tile")
 
 19.  Real-time application information can be seen regarding the CloudShop App running in Azure on our IaaS VMs. Here, you can wait for the Performance Test to run, and show how the Web Application performs.
 
-    ![Screenshot of the Live Metrics Stream page, with Incoming Requests, Outgoing Requests, and Overall Health, line and scatter graphs, and Server information.](images/Lab-guide/image127.png "Live Metrics Stream page")
+![Screenshot of the Live Metrics Stream page, with Incoming Requests, Outgoing Requests, and Overall Health, line and scatter graphs, and Server information.](images/Lab-guide/image127.png "Live Metrics Stream page")
 
 20.  If you go back to the **Performance Testing** blade, and click on **CloudShopLoadTest,** you will see the metrics form the run
 
-    ![Screenshot of Performance under load metrics.](images/Lab-guide/image128.png "Performance under load metrics")![Screenshot of the Requests donut chart.](images/Lab-guide/image129.png "Requests graph")
+![Screenshot of Performance under load metrics.](images/Lab-guide/image128.png "Performance under load metrics")![Screenshot of the Requests donut chart.](images/Lab-guide/image129.png "Requests graph")
 
 21.  Close the Performance Test, and click on the **Performance** under Investigate
 
-    ![Under Investigate, Performance (preview) is selected.](images/Lab-guide/image130.png "Investigate section")
+![Under Investigate, Performance (preview) is selected.](images/Lab-guide/image130.png "Investigate section")
 
 22.  Explore the metrics from the CloudShop Application
 
-    ![Screenshot of the CloudShop Application desktop.](images/Lab-guide/image131.png "CloudShop Application desktop")
+![Screenshot of the CloudShop Application desktop.](images/Lab-guide/image131.png "CloudShop Application desktop")
 
 23.  The Load Test should also have caused the alert on high processor usage to be trigged. An email should have been received.
 
-    ![Screenshot of an Azure Application Insights warning alert.](images/Lab-guide/image132.png "Azure Application Insights alert")
+![Screenshot of an Azure Application Insights warning alert.](images/Lab-guide/image132.png "Azure Application Insights alert")
 
 	NOTE: The email may take several minutes to arrive. You can proceed with the lab and check for the email later.
 
 24.  The alert will quickly resolve as the Load Test has completed causing the CPU condition to quiet
 
-    ![Screenshot of an Azure Application Insights success message.](images/Lab-guide/image133.png "Azure Application Insights success message")
+![Screenshot of an Azure Application Insights success message.](images/Lab-guide/image133.png "Azure Application Insights success message")
 
 ### Task 3: Simulate a failure of the CloudShop application
 
@@ -1009,11 +1007,11 @@ In this exercise, you will explore the information and data being provided by Az
 
 In this section, we will perform an ad-hoc search in Log Analytics data to see where our servers are not in compliance with security baselines. In the Log Search interface, we can perform ad-hoc searches against the log data being ingested into the Log Analytics service. Because the data is indexed, searching is very fast.
 
-1.  Open the **Azure portal** and navigate to Azure Monitor by clicking on **All services**, searching for "*monitor*", and selecting **Monitor**
+1.  Open the **Azure portal** and navigate to Azure Monitor by clicking on **All services**, searching for "*log analytics*", and selecting **Log Analytics**
 
     ![Selections in the Azure Portal display as previously mentioned.](images/Lab-guide/image66.png "Azure Portal")
 
-2.  Select **Log Analytics** under **SHARED SERVICES** to navigate to your workspace
+2.  Select **Log** from the left under **General**
 
     ![Under Shared Services, Log Analytics is selected.](images/Lab-guide/image141.png "Shared Services section")
 
@@ -1077,7 +1075,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
     d.  Function Alias: **WindowsDefNeeded**
 
-        ![Add Saved Search blade fields are set to the previously defined settings.](images/Lab-guide/image154.png "Add Saved Search blade")
+    ![Add Saved Search blade fields are set to the previously defined settings.](images/Lab-guide/image154.png "Add Saved Search blade")
 
 16. Select **OK.**
 
@@ -1098,7 +1096,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
 18.  Select **Table** output. Notice how this query calculates VM availability, based on heartbeats.
 
-    ![Screenshot showing the preceeding query in Log Analytics, with a table showing the %age availability of each VM.](images/Lab-guide/image185.png "Log Search showing VM availability query")
+![Screenshot showing the preceeding query in Log Analytics, with a table showing the %age availability of each VM.](images/Lab-guide/image185.png "Log Search showing VM availability query")
 
     For more information on how this query works, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/server-availability-rate.md>.
 
@@ -1241,7 +1239,7 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
 13.  All alert settings are now complete. Select **OK** to close the 'Add action group' blade, then click on **Create alert rule** to close the **Create rule** blade. You will see a notification once the alert has been created.
 
-    ![Screenshots of the notification of the successfully created alert rule.](images/Lab-guide/image171.png "Successfully created alert rule message")
+![Screenshots of the notification of the successfully created alert rule.](images/Lab-guide/image171.png "Successfully created alert rule message")
 
     NOTE: It may take up to 5 minutes after the alert rule is created for the alert to become active.
 
