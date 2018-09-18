@@ -30,9 +30,9 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
     - [Requirements](#requirements)
     - [Before the hands-on lab](#before-the-hands-on-lab)
         - [Overview](#overview)
-        - [Task 1: Build a Lab Virtual Machine in Azure.](#task-1--build-a-lab-virtual-machine-in-azure)
-        - [Task 2: Connect to LABVM & download and unzip student files](#task-2--connect-to-labvm-download-and-unzip-student-files)
-        - [Task 3: Create a new Azure portal dashboard](#task-3--create-a-new-azure-portal-dashboard)
+        - [Task 1: Build a Lab Virtual Machine in Azure.](#task-1-build-a-lab-virtual-machine-in-azure)
+        - [Task 2: Connect to LABVM & download and unzip student files](#task-2-connect-to-labvm--download-and-unzip-student-files)
+        - [Task 3: Create a new Azure portal dashboard](#task-3-create-a-new-azure-portal-dashboard)
         - [Summary](#summary)
 
 <!-- /TOC -->
@@ -122,7 +122,7 @@ Note: You may need to launch an \"in-private\" session in your browser if you ha
 
 3.  Login with the credentials specified during creation:
 
-    a.  User: **demouser **
+    a.  User: **demouser**
 
     b.  Password: **demo\@pass123**
 
