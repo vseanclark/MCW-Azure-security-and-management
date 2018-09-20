@@ -920,7 +920,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 15. Select **Run Test** to start the performance test
 
-	> **Note**: An error may occur if you do not have a Visual Studio Team Services (VSTS) Account configured. If so, then you'll need to create one before setting up the Performance Test.
+	> **Note**: An error may occur if you do not have an Azure DevOps Account configured. If so, then you'll need to create one before setting up the Performance Test.
 
 16. Once this is submitted it will show as **Queued.** Select the line and then details about the performance test will be shown.
 
