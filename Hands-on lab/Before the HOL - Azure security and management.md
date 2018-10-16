@@ -30,7 +30,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
     - [Requirements](#requirements)
     - [Before the hands-on lab](#before-the-hands-on-lab)
         - [Task 1: Build a lab Virtual Machine in Azure.](#task-1-build-a-lab-virtual-machine-in-azure)
-        - [Task 2: Connect to LABVM & download and unzip student files](#task-2-connect-to-labvm-download-and-unzip-student-files)
+        - [Task 2: Connect to LABVM and download and unzip student files](#task-2-connect-to-labvm-download-and-unzip-student-files)
         - [Task 3: Create a new Azure portal dashboard](#task-3-create-a-new-azure-portal-dashboard)
 
 <!-- /TOC -->
@@ -106,7 +106,7 @@ Before attending the HOL, you should follow these steps to prepare your environm
 
 8.  Once the deployment is complete, move on to the next exercise.
 
-### Task 2: Connect to LABVM & download and unzip student files
+### Task 2: Connect to LABVM and download and unzip student files
 
 1.  Move back to the Portal page on your local machine and wait for **LABVM** to show the Status of **Running**. Once it is running, select **Connect** to open the 'Connect to virtual machine' blade.
 
