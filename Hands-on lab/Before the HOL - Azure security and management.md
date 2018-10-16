@@ -26,17 +26,16 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 <!-- TOC -->
 
-- [Azure Security and Management setup](#azure-security-and-management-setup)
+- [Azure Security and Management before the hands-on lab setup guide](#azure-security-and-management-before-the-hands-on-lab-setup-guide)
     - [Requirements](#requirements)
     - [Before the hands-on lab](#before-the-hands-on-lab)
-        - [Overview](#overview)
         - [Task 1: Build a lab Virtual Machine in Azure.](#task-1-build-a-lab-virtual-machine-in-azure)
         - [Task 2: Connect to LABVM & download and unzip student files](#task-2-connect-to-labvm-download-and-unzip-student-files)
         - [Task 3: Create a new Azure portal dashboard](#task-3-create-a-new-azure-portal-dashboard)
 
 <!-- /TOC -->
 
-# Azure Security and Management setup
+# Azure Security and Management before the hands-on lab setup guide
 
 ## Requirements
 
@@ -59,15 +58,13 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 Duration: 30 mins
 
-### Overview
-
 Before attending the HOL, you should follow these steps to prepare your environment for an efficient day. Your first task will be to build a **LABVM** to use for the HOL and download some student files that will be used. Then, you will create a new Azure Dashboard to use during the HOL.
 
 ### Task 1: Build a lab Virtual Machine in Azure
 
 1.  Launch a browser and navigate to <https://portal.azure.com>. Once prompted, login with your Microsoft Azure credentials. If prompted, choose whether your account is an organization account or just a Microsoft Account.
 
->**Note**: You may need to launch an \"in-private\" session in your browser if you have multiple Microsoft Accounts.
+    >**Note**: You may need to launch an \"in-private\" session in your browser if you have multiple Microsoft Accounts.
 
 2.  Select **+Create a resource**, and in the search box, type in **Visual Studio Community 2017,** and press enter. Select the Visual Studio Community 2017 image running on Windows Server 2016.
 
