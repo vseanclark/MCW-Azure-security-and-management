@@ -135,11 +135,11 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 4. On the **Add Automation Account** blade, specify the following information:
 
-    a. Name: **Automation-Acct**
+    - Name: **Automation-Acct**
 
-    b. Resource group: **HOLRGAUTO** (create a new resource group)
+    - Resource group: **HOLRGAUTO** (create a new resource group)
 
-    c. Location: **East US 2** or **West Europe**
+    - Location: **East US 2** or **West Europe**
 
     >**Note**: Not all Azure Automation features are supported in all regions. We suggest using East US 2 or West Europe, whichever is closer to you.
 
@@ -159,11 +159,11 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 3. Specify the following properties and click **Create** to continue:
 
-    a. Name: **SQLLocalAdmin**
+    - Name: **SQLLocalAdmin**
 
-    b. User Name: **demouser**
+    - User Name: **demouser**
 
-    c. Password & Confirm: **demo\@pass123**
+    - Password & Confirm: **demo\@pass123**
 
     ![New Credential blade fields are set to the previously defined settings.](images/Lab-guide/image26.png "New Credential blade")
 
@@ -489,7 +489,7 @@ In this task, you will configure the VMs to capture diagnostic data in an Azure 
 
     ![On the Performance counters tab, the SQL Server checkbox is called out.](images/Lab-guide/image65.png "Performance counters tab")
 
-<**Note**: You will need to wait for the portal to complete the updates to all VMs before moving to the next exercise.
+>**Note**: You will need to wait for the portal to complete the updates to all VMs before moving to the next exercise.
 
 ### Summary
 
@@ -513,15 +513,15 @@ The next step is to provision the Azure security and Azure management components
 
 3. Complete the OMS Workspace blade using the following information. Then, select  **OK**:
 
-    a. OMS Workspace: **Unique name**
+    - OMS Workspace: **Unique name**
+    
+    - Subscription: **Select the current subscription**.
+    
+    - Resource Group: **HOLRG**
 
-    b. Subscription: **Select the current subscription**.
+    - Location: **Closest to your deployment**
 
-    c. Resource Group: **HOLRG**
-
-    d. Location: **Closest to your deployment**
-
-    e. Pricing Tier: **Select Per GB**
+    - Pricing Tier: **Select Per GB**
 
     ![Fields in the OMS Workspace and Pricing Tier blades are set to the prevoiusly defined settings.](images/Lab-guide/image68.png "OMS Workspace and Pricing Tier blades")
 
@@ -561,7 +561,7 @@ The next step is to provision the Azure security and Azure management components
 
 4. Select the subscription you would like to upgrade by clicking on the subscription name.
 
-> ![Screenshot of the Enable advanced security for subscriptions page with a subscription selected.](images/Lab-guide/image76.png "Enable advanced security for subscriptions page")
+    ![Screenshot of the Enable advanced security for subscriptions page with a subscription selected.](images/Lab-guide/image76.png "Enable advanced security for subscriptions page")
 
 5. Select the **Standard** pricing tier and click on **Save**.
 
@@ -696,11 +696,11 @@ The Update Management functionality will be configured through Azure Automation.
 
 3. Verify the **Log Analytics workspace** and **Automation Account** and select **Enable**.
 
-> ![The Enable button is selected in the Change Tracking window.](images/Lab-guide/image96.png "Change Tracking window")
+  ![The Enable button is selected in the Change Tracking window.](images/Lab-guide/image96.png "Change Tracking window")
 
 4. Wait for the deployment to complete. This can take a few minutes.
 
-> ![Screenshot of the Change Tracking being enabled message.](images/Lab-guide/image97.png "Change Tracking being enabled message")
+  ![Screenshot of the Change Tracking being enabled message.](images/Lab-guide/image97.png "Change Tracking being enabled message")
 
 Do not navigate away from the Update Management blade until the deployment message reads "The 'Change Tracking and Inventory' solution is being deployed on this virtual machine. This can take a few minutes. You can do other work while this is in progress."
 
@@ -796,7 +796,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
 17. You will sign-in to Azure as normal.
 
-> ![Screenshot of the Microsoft Sign in box.](images/Lab-guide/image102.png "Microsoft Sign in box")
+  ![Screenshot of the Microsoft Sign in box.](images/Lab-guide/image102.png "Microsoft Sign in box")
 
 18. Under the **Send telemetry to**: Select **Default website under Existing Application Insights resource**. Then, click **Configure Settings**.
 
@@ -804,13 +804,13 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
 19. On the **Configuration settings for Application Insights**, complete the information as follows, and select **OK**:
 
-    a. Microsoft Azure Subscriptions: **Use the same subscription**
+    - Microsoft Azure Subscriptions: **Use the same subscription**
 
-    b. Resource Groups: **HOLInsights**
+    - Resource Groups: **HOLInsights**
 
-    c. Application Insights Resource: **HOLCloudShop**
+    - Application Insights Resource: **HOLCloudShop**
 
-    d. Location: **Select the same region as your deployment**.
+    - Location: **Select the same region as your deployment**.
 
     ![Fields in the Configuration Settings for Application Insights dialog box are set to the previously defined settings.](images/Lab-guide/image109.png "Configuration Settings for Application Insights dialog box")
 
