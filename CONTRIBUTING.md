@@ -77,7 +77,7 @@ Once submitted, your report will go into the [issue tracking](https://github.com
 ## Contributing Fixes
 
 If you are interested in writing code to fix issues,
-please see [How to Contribute](https://github.com/Microsoft/MSW/wiki/How-to-Contribute) in the wiki.
+please see [How to Contribute](https://github.com/Microsoft/MCW/wiki/How-to-Contribute) in the wiki.
 
 # Thank You!
 
